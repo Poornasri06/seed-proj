@@ -55,36 +55,26 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* ============ FOUNDING STORY ============ */}
+      {/* ============ OUR STORY ============ */}
       <section className={`${TONE_LIFT} text-white py-24 md:py-32`}>
         <div className="max-w-container mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-14">
           <div className="lg:col-span-5">
             <Reveal>
-              <p className="label text-champagne mb-5 tracking-[0.3em]">THE FOUNDING STORY</p>
+              <p className="label text-champagne mb-5 tracking-[0.3em]">OUR STORY</p>
               <h2 className="font-sans text-4xl md:text-5xl font-medium leading-[1.05]">
-                A studio built around a different belief about <span className="font-medium">engineering.</span>
+                Built on Engineering Excellence.
               </h2>
             </Reveal>
           </div>
           <div className="lg:col-span-7 text-white/65 leading-relaxed space-y-5">
             <p>
-              SEED was formed in early 2005 with a vision to bridge the gap in the field of
-              building engineering — and to positively impact the parameters that define the
-              design of MEP engineering services. Our focus on quality in design and deliverables
-              has earned us credibility, enabling us to undertake landmark projects across the
-              Middle East, Africa and the Indian subcontinent.
+              SEED Engineering was established in 2005 with a clear vision: to redefine building services engineering through technical excellence, collaboration and innovation.
             </p>
             <p>
-              Today the practice employs more than 200 experienced design professionals across
-              Dubai, Singapore, Mumbai, Kochi, Bangalore, Delhi and Pune. SEED is one of the
-              fastest growing engineering practices in the cities we serve, having associated
-              with major international architects and consultants to streamline our design
-              processes and offer innovative concepts to our esteemed clientele.
+              Over the past two decades, SEED has grown into one of the region’s leading MEP engineering consultancies, delivering projects across hospitality, residential, commercial, healthcare, education and mixed-use sectors.
             </p>
             <p>
-              Sustainable and energy-efficient design — the principle on which SEED was founded —
-              remains a core focus. Our sustainability group provides management and advisory
-              services for numerous green building projects across the UAE and India.
+              Today, with more than 200 professionals across seven offices, SEED partners with developers, architects and contractors to deliver high-performing buildings across the Middle East, Africa and India.
             </p>
           </div>
         </div>
