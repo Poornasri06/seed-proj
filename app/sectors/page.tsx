@@ -77,7 +77,7 @@ const SECTORS_DATA = [
   {
     id: 'infrastructure-sustainable-communities',
     title: 'Infrastructure & Sustainable Communities',
-    image: '/sectors/ain-al-fayda.jpeg',
+    image: '/sectors/infrastructure-sustainable-communities.jpg',
     desc: 'District cooling networks, master-plan utility distributions, and net-zero community developments driving the future of urban living.',
   },
 ];

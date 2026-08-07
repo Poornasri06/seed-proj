@@ -141,9 +141,73 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      {/* Services List */}
-      <section className="py-24 md:py-32">
+      {/* SECTION 2 – Introduction */}
+      <section className="py-20 md:py-28 bg-[#0f172a] border-b border-white/5">
+        <div className="container mx-auto px-6 lg:px-12 text-center max-w-4xl">
+          <Reveal>
+            <span className="text-gold text-[10px] font-semibold tracking-[0.2em] uppercase mb-4 block">OUR PHILOSOPHY</span>
+            <h2 className="text-3xl md:text-5xl font-serif font-bold text-white mb-6">
+              Engineering Services Built Around Performance
+            </h2>
+            <p className="text-base md:text-lg font-sans font-light text-slate-400 leading-relaxed max-w-3xl mx-auto">
+              Every building presents unique engineering challenges. Our multidisciplinary teams work together from concept to commissioning, delivering integrated solutions that improve building performance, reduce project risks and support long-term operational value.
+            </p>
+          </Reveal>
+        </div>
+      </section>
+
+      {/* SECTION 3 – Engineering Process (Horizontal Timeline) */}
+      <section className="py-24 md:py-32 bg-[#0b0f19] border-b border-white/5">
         <div className="container mx-auto px-6 lg:px-12">
+          <Reveal>
+            <div className="text-center max-w-3xl mx-auto mb-16">
+              <span className="text-gold text-[10px] font-semibold tracking-[0.2em] uppercase mb-4 block">DELIVERY METHODOLOGY</span>
+              <h2 className="text-4xl md:text-5xl font-serif font-bold text-white mb-4">
+                How We Deliver Engineering Excellence
+              </h2>
+              <p className="text-slate-400 font-light text-[15px]">
+                A structured, 6-step engineering timeline that converts design intent into verified operational performance.
+              </p>
+            </div>
+          </Reveal>
+
+          {/* Horizontal Timeline */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-6">
+            {[
+              { step: 'Step 01', title: 'Understand', desc: 'We begin by understanding the client’s vision, commercial objectives and project constraints.' },
+              { step: 'Step 02', title: 'Analyse', desc: 'Technical requirements, regulations and engineering risks are assessed before design begins.' },
+              { step: 'Step 03', title: 'Design', desc: 'Integrated engineering solutions are developed collaboratively using BIM.' },
+              { step: 'Step 04', title: 'Coordinate', desc: 'Every engineering discipline is coordinated with architecture and structure to eliminate clashes.' },
+              { step: 'Step 05', title: 'Verify', desc: 'Performance simulations, reviews and quality checks ensure compliance and reliability.' },
+              { step: 'Step 06', title: 'Deliver', desc: 'Construction support, commissioning and handover ensure buildings perform as intended.' },
+            ].map((st, i) => (
+              <Reveal key={i} delay={i * 0.1}>
+                <div className="bg-[#0f172a] border border-white/8 p-6 h-full flex flex-col justify-between hover:border-gold/40 transition-colors relative group">
+                  <div>
+                    <div className="flex items-center justify-between mb-4">
+                      <span className="text-gold text-[10px] font-bold tracking-widest uppercase">{st.step}</span>
+                      <span className="text-white/20 group-hover:text-gold/40 transition-colors font-serif font-bold text-sm">0{i + 1}</span>
+                    </div>
+                    <h3 className="text-white font-serif text-lg font-semibold mb-3 group-hover:text-gold transition-colors">{st.title}</h3>
+                    <p className="text-slate-400 text-[12px] font-light leading-relaxed">{st.desc}</p>
+                  </div>
+                </div>
+              </Reveal>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Services List */}
+      <section className="py-24 md:py-32 border-t border-white/5">
+        <div className="container mx-auto px-6 lg:px-12">
+          <Reveal>
+            <div className="mb-20 max-w-3xl">
+              <span className="text-gold text-[10px] font-semibold tracking-[0.2em] uppercase mb-4 block">PORTFOLIO OF SERVICES</span>
+              <h2 className="text-4xl md:text-6xl font-serif font-bold text-white mb-4">Our Services</h2>
+              <div className="w-20 h-1 bg-gold mt-4" />
+            </div>
+          </Reveal>
           {SERVICES_DATA.map((service, idx) => {
             const isEven = idx % 2 === 0;
             return (

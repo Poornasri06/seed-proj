@@ -240,7 +240,7 @@ MEP Design & Supervision
 
 150,000.00 sqm Mixed used 302m, tall building consisting Of 2B+G+64 floors of offices, Mandarin Hotel and high-end residential apartments on Sh. Zayed Road, Dubai. 
 
-## **Port De La Mer Hotel | Dubai, UAE** 
+## **Gran Melia Hotel | Dubai, UAE** 
 
 ## **PROJECT** 
 
