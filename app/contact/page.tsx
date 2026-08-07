@@ -420,7 +420,6 @@ export default function ContactPage() {
                   <div>
                     <div className="flex items-center justify-between mb-4">
                       <span className="text-gold text-[10px] font-bold tracking-widest uppercase">Office 0{idx + 1}</span>
-                      <span className="text-slate-500 text-[10px] font-bold tracking-widest uppercase">{off.country}</span>
                     </div>
                     <h3 className="font-serif text-2xl font-bold text-white mb-6 group-hover:text-gold transition-colors">{off.city}</h3>
 
