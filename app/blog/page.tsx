@@ -125,10 +125,11 @@ const EVENTS = [
 ];
 
 const MEDIA_ITEMS = [
-  { outlet: 'Middle East Architect', title: 'How SEED is Engineering Dubai\'s Next Generation of High-Rises', date: 'July 2026' },
-  { outlet: 'Construction Week Online', title: 'Interview: Balancing Luxury Hospitality with Net-Zero Energy Targets', date: 'June 2026' },
-  { outlet: 'MEP Middle East Podcast', title: 'Episode 42: Clash Detection vs Buildability in Multidisciplinary BIM', date: 'May 2026' },
-  { outlet: 'Technical Press Release', title: 'SEED Delivers Integrated MEP Commissioning Framework for Wasl Tower', date: 'April 2026' },
+  { type: 'Magazine Features', outlet: 'Middle East Architect', title: 'How SEED is Engineering Dubai\'s Next Generation of High-Rises', date: 'July 2026' },
+  { type: 'Interviews', outlet: 'Construction Week Online', title: 'Executive Interview: Balancing Luxury Hospitality with Net-Zero Energy Targets', date: 'June 2026' },
+  { type: 'Podcasts', outlet: 'MEP Middle East Podcast', title: 'Episode 42: Clash Detection vs Buildability in Multidisciplinary BIM', date: 'May 2026' },
+  { type: 'Press Releases', outlet: 'Technical Press Release', title: 'SEED Delivers Integrated MEP Commissioning Framework for Wasl Tower', date: 'April 2026' },
+  { type: 'Video Features', outlet: 'Digital Engineering TV', title: 'Inside SEED\'s Computational Design & Digital Twin Workflows', date: 'March 2026' },
 ];
 
 const TOPICS = [
@@ -396,7 +397,7 @@ export default function InsightsPage() {
         <div className="container mx-auto px-6 lg:px-12">
           <Reveal>
             <div className="mb-16 max-w-3xl">
-              <span className="text-gold text-[10px] font-semibold tracking-[0.2em] uppercase mb-3 block">PRESS</span>
+              <span className="text-gold text-[10px] font-semibold tracking-[0.2em] uppercase mb-3 block">MEDIA COVERAGE</span>
               <h2 className="text-3xl md:text-5xl font-serif font-bold text-white">In the Media</h2>
             </div>
           </Reveal>
@@ -406,10 +407,18 @@ export default function InsightsPage() {
               <Reveal key={i}>
                 <div className="bg-[#0f172a] border border-white/8 p-6 md:p-8 rounded-sm flex flex-col md:flex-row items-start md:items-center justify-between gap-6 hover:border-gold/40 transition-colors group">
                   <div>
-                    <span className="text-gold text-[10px] font-bold tracking-[0.15em] uppercase block mb-2">{item.outlet} · {item.date}</span>
+                    <div className="flex items-center gap-3 mb-2">
+                      <span className="text-gold text-[10px] font-bold tracking-[0.15em] uppercase">{item.type}</span>
+                      <span className="text-slate-600 text-xs">·</span>
+                      <span className="text-slate-300 text-xs font-semibold">{item.outlet}</span>
+                      <span className="text-slate-600 text-xs">·</span>
+                      <span className="text-slate-500 text-xs">{item.date}</span>
+                    </div>
                     <h3 className="font-serif text-lg md:text-xl font-bold text-white group-hover:text-gold transition-colors">{item.title}</h3>
                   </div>
-                  <span className="text-gold text-[11px] font-bold tracking-[0.1em] uppercase shrink-0">Read More →</span>
+                  <Link href={`/blog/media-${i + 1}`} className="text-gold text-[11px] font-bold tracking-[0.1em] uppercase shrink-0 group-hover:underline flex items-center gap-1">
+                    Read More →
+                  </Link>
                 </div>
               </Reveal>
             ))}
