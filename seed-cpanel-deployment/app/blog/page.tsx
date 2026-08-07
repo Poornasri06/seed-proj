@@ -83,7 +83,7 @@ const COMPANY_NEWS = [
     category: 'Team Announcements',
     date: 'June 2026',
     desc: 'Welcoming industry veterans to lead our Singapore and regional design centres, accelerating Asia-Pacific expansion.',
-    image: '/projects/anand-krishnan.webp',
+    image: '/projects/SAAS - St.Regis.webp',
   },
   {
     headline: 'Strategic Collaboration on Net-Zero Building Technologies Announced',
