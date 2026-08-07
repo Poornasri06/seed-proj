@@ -106,7 +106,7 @@ export default function Navbar() {
     >
       <div
         className="absolute inset-0 opacity-15"
-        style={{ backgroundImage: "url('/seedv3/hero.webp')", backgroundSize: 'cover', backgroundPosition: 'center' }}
+        style={{ backgroundImage: "url('/hero.webp')", backgroundSize: 'cover', backgroundPosition: 'center' }}
       />
       <div className="absolute inset-0 bg-gradient-to-b from-ink via-ink/95 to-ink" />
 

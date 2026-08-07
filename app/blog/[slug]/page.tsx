@@ -36,7 +36,7 @@ export default function BlogPost({ params }: { params: { slug: string } }) {
       {post.image && (
         <div className="container mx-auto px-6 lg:px-12 mb-16 flex justify-center">
           <img 
-            src={`/seedv3${post.image}`} 
+            src={post.image} 
             alt={post.title} 
             className="w-full max-w-4xl h-auto rounded-sm"
           />
