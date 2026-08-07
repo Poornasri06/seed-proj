@@ -6,50 +6,190 @@ import Link from 'next/link';
 import { Reveal, Stagger, StaggerItem } from '@/components/ui/Reveal';
 
 const VACANCIES = [
+  // DUBAI DESIGN OFFICE - ENGINEERING POSITIONS
   {
-    id: 'sr-mech-eng-dubai',
-    title: 'Senior Mechanical Engineer',
-    location: 'Dubai, UAE',
-    department: 'Mechanical Engineering',
-    type: 'Full-time',
-    experience: '10+ Years',
-    desc: 'Lead complex HVAC and central cooling plant design for luxury high-rise, hospitality, and mixed-use developments across the MENA region.',
-  },
-  {
-    id: 'lead-elec-eng-dubai',
-    title: 'Lead Electrical Engineer',
-    location: 'Dubai, UAE',
+    id: 'ad-electrical-dxb',
+    ref: 'SEED-DXB-AD-E-01',
+    title: 'Associate Director – Electrical',
+    office: 'Dubai Design Office',
     department: 'Electrical Engineering',
+    location: 'Dubai, UAE',
     type: 'Full-time',
-    experience: '8+ Years',
-    desc: 'Engineer high-voltage power distribution, emergency generation, lighting design, and power quality systems for commercial towers and medical centers.',
+    experience: '25+ Years',
+    qualification: 'Graduate Engineer with 25+ Years of Industry Experience',
+    desc: 'Lead strategic electrical design, power infrastructure, and multidisciplinary coordination for landmark Dubai & regional developments.',
   },
   {
-    id: 'sr-bim-coord-sg',
-    title: 'Senior BIM Coordinator',
-    location: 'Singapore',
+    id: 'ad-mechanical-dxb',
+    ref: 'SEED-DXB-AD-M-02',
+    title: 'Associate Director – Mechanical',
+    office: 'Dubai Design Office',
+    department: 'Mechanical Engineering',
+    location: 'Dubai, UAE',
+    type: 'Full-time',
+    experience: '25+ Years',
+    qualification: 'Graduate Engineer with 25+ Years of Industry Experience',
+    desc: 'Direct major HVAC, district cooling, and mechanical building services for high-rise, luxury hospitality, and mixed-use projects.',
+  },
+  {
+    id: 'sa-mechanical-dxb',
+    ref: 'SEED-DXB-SA-M-03',
+    title: 'Senior Associate – Mechanical',
+    office: 'Dubai Design Office',
+    department: 'Mechanical Engineering',
+    location: 'Dubai, UAE',
+    type: 'Full-time',
+    experience: '20+ Years',
+    qualification: '20+ Years’ Experience in Building Services & MEP Design',
+    desc: 'Senior mechanical engineering lead driving complex system calculations, equipment selection, and technical authority reviews.',
+  },
+  {
+    id: 'sa-electrical-dxb',
+    ref: 'SEED-DXB-SA-E-04',
+    title: 'Senior Associate – Electrical',
+    office: 'Dubai Design Office',
+    department: 'Electrical Engineering',
+    location: 'Dubai, UAE',
+    type: 'Full-time',
+    experience: '20+ Years',
+    qualification: '20+ Years’ Experience in Electrical Power & Lighting',
+    desc: 'Senior electrical engineering lead managing high-voltage distribution, emergency standby systems, and authority approvals.',
+  },
+  {
+    id: 'associate-electrical-dxb',
+    ref: 'SEED-DXB-A-E-05',
+    title: 'Associate – Electrical',
+    office: 'Dubai Design Office',
+    department: 'Electrical Engineering',
+    location: 'Dubai, UAE',
+    type: 'Full-time',
+    experience: '15+ Years',
+    qualification: '15+ Years’ Industry Experience in Electrical Design',
+    desc: 'Experienced electrical engineer managing design teams, client coordination, and detailed system execution.',
+  },
+  {
+    id: 'associate-mechanical-dxb',
+    ref: 'SEED-DXB-A-M-06',
+    title: 'Associate – Mechanical',
+    office: 'Dubai Design Office',
+    department: 'Mechanical Engineering',
+    location: 'Dubai, UAE',
+    type: 'Full-time',
+    experience: '15+ Years',
+    qualification: '15+ Years’ Experience (Plus) in HVAC & Energy Systems',
+    desc: 'Experienced mechanical engineer leading central cooling plant design, thermal simulation, and field quality assurance.',
+  },
+  {
+    id: 'sr-elv-dxb',
+    ref: 'SEED-DXB-ELV-07',
+    title: 'Sr. ELV Engineer',
+    office: 'Dubai Design Office',
+    department: 'ELV / ICT & Security',
+    location: 'Dubai, UAE',
+    type: 'Full-time',
+    experience: '8–12 Years',
+    qualification: 'Electrical/Electronics Degree · Experienced in ELV/ICT and Security Design',
+    desc: 'Specialist engineer designing structured cabling, BMS, CCTV access control, and integrated smart building infrastructure.',
+  },
+
+  // DUBAI DESIGN OFFICE - CORPORATE POSITIONS
+  {
+    id: 'sr-hr-manager-dxb',
+    ref: 'SEED-DXB-HR-08',
+    title: 'Senior HR Manager',
+    office: 'Dubai Design Office',
+    department: 'Corporate / HR',
+    location: 'Dubai, UAE',
+    type: 'Full-time',
+    experience: '15+ Years',
+    qualification: '15+ Years’ Experience · Preferably Lady Candidate · Preference for Local Emirati, British, Australian, American or Arab National',
+    desc: 'Lead strategic human resources, global recruitment, talent management, and employee relations for SEED group offices.',
+  },
+  {
+    id: 'financial-controller-dxb',
+    ref: 'SEED-DXB-FC-09',
+    title: 'Financial Controller',
+    office: 'Dubai Design Office',
+    department: 'Corporate / Finance',
+    location: 'Dubai, UAE',
+    type: 'Full-time',
+    experience: '15+ Years',
+    qualification: '15+ Years’ Experience · Chartered Accountants from India, US CPA, or ICAI from UK',
+    desc: 'Direct corporate financial planning, auditing, tax compliance, budget management, and multi-office financial controls.',
+  },
+
+  // INDIA OUTSOURCING OFFICE POSITIONS (Supporting Dubai Design Office)
+  {
+    id: 'sr-mech-ind',
+    ref: 'SEED-IND-SME-01',
+    title: 'Sr. Mechanical Engineer',
+    office: 'India Outsourcing Office',
+    department: 'Mechanical Engineering',
+    location: 'Bangalore | Pune | Mumbai | Delhi | Koratty',
+    type: 'Full-time',
+    experience: '8–12 Years',
+    qualification: '8–12 Years’ Experience supporting Dubai Design Office',
+    desc: 'Senior mechanical engineer producing calculations, Revit models, and detailed HVAC design for Dubai flagship projects.',
+  },
+  {
+    id: 'sr-elec-ind',
+    ref: 'SEED-IND-SEE-02',
+    title: 'Sr. Electrical Engineer',
+    office: 'India Outsourcing Office',
+    department: 'Electrical Engineering',
+    location: 'Bangalore | Pune | Mumbai | Delhi | Koratty',
+    type: 'Full-time',
+    experience: '8–12 Years',
+    qualification: '8–12 Years’ Experience supporting Dubai Design Office',
+    desc: 'Senior electrical engineer handling single-line diagrams, containment, lighting calculations, and BIM coordination.',
+  },
+  {
+    id: 'inter-mech-ind',
+    ref: 'SEED-IND-IME-03',
+    title: 'Intermediate Mechanical Engineer',
+    office: 'India Outsourcing Office',
+    department: 'Mechanical Engineering',
+    location: 'Bangalore | Pune | Mumbai | Delhi | Koratty',
+    type: 'Full-time',
+    experience: '4–6 Years',
+    qualification: '4–6 Years’ Experience supporting Dubai Design Office',
+    desc: 'Intermediate mechanical design engineer performing duct sizing, hydraulic calculations, and Revit modeling.',
+  },
+  {
+    id: 'inter-elec-ind',
+    ref: 'SEED-IND-IEE-04',
+    title: 'Intermediate Electrical Engineer',
+    office: 'India Outsourcing Office',
+    department: 'Electrical Engineering',
+    location: 'Bangalore | Pune | Mumbai | Delhi | Koratty',
+    type: 'Full-time',
+    experience: '4–6 Years',
+    qualification: '4–6 Years’ Experience supporting Dubai Design Office',
+    desc: 'Intermediate electrical design engineer modeling electrical services, cable sizing, and small power layouts.',
+  },
+  {
+    id: 'bim-eng-ind',
+    ref: 'SEED-IND-BIM-05',
+    title: 'BIM Engineer / Technician',
+    office: 'India Outsourcing Office',
     department: 'Digital Engineering & BIM',
+    location: 'Bangalore | Pune | Mumbai | Delhi | Koratty',
     type: 'Full-time',
-    experience: '6+ Years',
-    desc: 'Drive multidisciplinary Revit/BIM coordination, automated clash detection, and digital twin asset workflows for Asia-Pacific flagships.',
+    experience: '3–5 Years',
+    qualification: '3–5 Years’ Experience supporting Dubai Design Office',
+    desc: 'Multidisciplinary Revit MEP modeler driving clash resolution, family creation, and 3D coordination for Middle East projects.',
   },
   {
-    id: 'sustainability-cons-mum',
-    title: 'Sustainability Consultant',
-    location: 'Mumbai, India',
-    department: 'Sustainability & Energy',
+    id: 'sr-elv-ind',
+    ref: 'SEED-IND-ELV-06',
+    title: 'Sr. ELV Engineer',
+    office: 'India Outsourcing Office',
+    department: 'ELV / ICT & Security',
+    location: 'Bangalore | Pune | Mumbai | Delhi | Koratty',
     type: 'Full-time',
-    experience: '5+ Years',
-    desc: 'Perform energy modeling, carbon assessments, and daylight simulations for LEED Platinum and Estidama Pearl rated developments.',
-  },
-  {
-    id: 'plumbing-fire-eng-kochi',
-    title: 'Plumbing & Fire Protection Engineer',
-    location: 'Kochi, India',
-    department: 'Public Health Engineering',
-    type: 'Full-time',
-    experience: '7+ Years',
-    desc: 'Design hydraulic water treatment, drainage, stormwater management, and active fire suppression systems for major urban master plans.',
+    experience: '8–12 Years',
+    qualification: '8–12 Years’ Experience · Experienced in ELV/ICT and Security Design · Electrical/Electronics Degree',
+    desc: 'Senior ELV engineer producing schematics, device layouts, and network integration drawings for Dubai Design Office.',
   },
 ];
 
@@ -77,15 +217,22 @@ const WHY_JOIN = [
 ];
 
 const HIRING_STEPS = [
-  { step: 'Step 01', title: 'Application', desc: 'Submit your CV and portfolio online through our career portal.' },
+  { step: 'Step 01', title: 'Application', desc: 'Submit your CV with the relevant Job Reference Number to hr@seedengineering.com.' },
   { step: 'Step 02', title: 'Review', desc: 'Our recruitment team reviews your technical qualifications and experience.' },
   { step: 'Step 03', title: 'Interview', desc: 'Meet our technical leads and management team for in-depth discussion.' },
   { step: 'Step 04', title: 'Offer', desc: 'Successful candidates receive a competitive formal employment offer.' },
   { step: 'Step 05', title: 'Welcome to SEED', desc: 'Begin your journey with structured onboarding and project team integration.' },
 ];
 
+const OFFICES_FILTER = ['All Openings', 'Dubai Design Office', 'India Outsourcing Office'];
+
 export default function CareersPage() {
+  const [selectedOffice, setSelectedOffice] = useState('All Openings');
   const [selectedJob, setSelectedJob] = useState<typeof VACANCIES[0] | null>(null);
+
+  const filteredVacancies = selectedOffice === 'All Openings'
+    ? VACANCIES
+    : VACANCIES.filter(v => v.office === selectedOffice);
 
   const scrollToOpenings = () => {
     const el = document.getElementById('openings');
@@ -110,20 +257,20 @@ export default function CareersPage() {
         <div className="relative z-10 container mx-auto px-6 lg:px-12 text-center max-w-4xl">
           <Reveal>
             <span className="text-gold text-[10px] font-semibold tracking-[0.25em] uppercase mb-4 block">
-              CAREERS
+              WE ARE HIRING!
             </span>
             <h1 className="text-5xl md:text-7xl font-serif font-bold text-white mb-6 leading-tight">
               Build the Future With SEED
             </h1>
             <p className="text-lg md:text-xl font-sans font-light text-slate-400 leading-relaxed max-w-3xl mx-auto mb-10">
-              Join a team of passionate engineers, designers and professionals committed to delivering innovative engineering solutions. At SEED, you’ll work on landmark developments, collaborate with industry experts and build a career that makes a lasting impact.
+              Join our engineering teams across our Dubai Design Office and India Outsourcing Offices (Bangalore, Pune, Mumbai, Delhi, Koratty) and contribute to landmark projects across the region.
             </p>
             <div className="flex flex-wrap gap-4 justify-center">
               <button
                 onClick={scrollToOpenings}
                 className="inline-flex items-center justify-center px-10 py-5 bg-gold hover:bg-yellow-500 text-[#0b0f19] font-sans text-[11px] font-bold tracking-[0.15em] uppercase transition-colors duration-300 rounded-sm"
               >
-                View Open Positions
+                View Open Positions ({VACANCIES.length})
               </button>
             </div>
           </Reveal>
@@ -208,33 +355,65 @@ export default function CareersPage() {
       {/* SECTION 04 – CURRENT OPPORTUNITIES */}
       <section id="openings" className="py-24 bg-[#0f172a] border-t border-white/5 scroll-mt-20">
         <div className="container mx-auto px-6 lg:px-12">
+          
           <Reveal>
-            <div className="mb-16 max-w-3xl">
-              <span className="text-gold text-[10px] font-semibold tracking-[0.2em] uppercase mb-3 block">JOIN OUR TEAM</span>
-              <h2 className="text-4xl md:text-5xl font-serif font-bold text-white mb-4">Current Opportunities</h2>
-              <p className="text-slate-400 font-light text-[15px]">
-                Explore open engineering and digital delivery roles across our global design centres.
-              </p>
+            <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
+              <div>
+                <span className="text-gold text-[10px] font-semibold tracking-[0.2em] uppercase mb-3 block">CAREER OPPORTUNITIES</span>
+                <h2 className="text-4xl md:text-5xl font-serif font-bold text-white mb-2">We Are Hiring!</h2>
+                <p className="text-slate-400 font-light text-[14px]">
+                  Please mention the relevant <strong className="text-gold font-semibold">Job Reference Number</strong> in your email subject/body when applying.
+                </p>
+              </div>
+
+              {/* Office Filter Tabs */}
+              <div className="flex flex-wrap gap-2">
+                {OFFICES_FILTER.map((office) => (
+                  <button
+                    key={office}
+                    onClick={() => setSelectedOffice(office)}
+                    className={`px-4 py-2.5 text-[11px] font-bold tracking-wider uppercase rounded-sm border transition-all ${
+                      selectedOffice === office
+                        ? 'bg-gold text-[#0b0f19] border-gold'
+                        : 'bg-white/5 text-slate-300 border-white/10 hover:border-gold/50'
+                    }`}
+                  >
+                    {office}
+                  </button>
+                ))}
+              </div>
             </div>
           </Reveal>
 
+          {/* Vacancies Grid */}
           <Stagger className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {VACANCIES.map((job) => (
+            {filteredVacancies.map((job) => (
               <StaggerItem key={job.id}>
-                <div className="bg-[#0b0f19] border border-white/10 p-8 rounded-sm h-full flex flex-col justify-between hover:border-gold/40 transition-colors group">
+                <div className="bg-[#0b0f19] border border-white/10 p-8 rounded-sm h-full flex flex-col justify-between hover:border-gold/40 transition-colors group relative">
                   <div>
-                    <span className="text-gold text-[10px] font-bold tracking-[0.15em] uppercase block mb-3">{job.department}</span>
+                    <div className="flex items-center justify-between gap-2 mb-4">
+                      <span className="text-gold text-[10px] font-bold tracking-[0.15em] uppercase">{job.office}</span>
+                      <span className="text-gold bg-gold/10 border border-gold/30 px-2.5 py-1 text-[10px] font-bold tracking-widest uppercase rounded-sm">
+                        REF: {job.ref}
+                      </span>
+                    </div>
+
                     <h3 className="font-serif text-2xl font-bold text-white mb-4 group-hover:text-gold transition-colors">{job.title}</h3>
                     
                     <div className="space-y-2 mb-6 text-[13px] text-slate-400 font-light">
-                      <div className="flex items-center gap-2">
-                        <span className="text-gold font-bold">📍</span>
+                      <div className="flex items-start gap-2">
+                        <span className="text-gold font-bold shrink-0">📍</span>
                         <span>{job.location}</span>
                       </div>
                       <div className="flex items-center gap-2">
-                        <span className="text-gold font-bold">💼</span>
-                        <span>{job.type} · {job.experience}</span>
+                        <span className="text-gold font-bold shrink-0">💼</span>
+                        <span>{job.type} · Experience: <strong className="text-slate-200">{job.experience}</strong></span>
                       </div>
+                    </div>
+
+                    <div className="bg-white/5 border border-white/5 p-4 rounded-sm mb-6 text-[12px] text-slate-300 leading-relaxed font-light">
+                      <span className="text-gold text-[10px] font-bold tracking-widest uppercase block mb-1">Qualification</span>
+                      {job.qualification}
                     </div>
 
                     <p className="text-slate-400 text-[13px] font-light leading-relaxed mb-8">{job.desc}</p>
@@ -243,9 +422,9 @@ export default function CareersPage() {
                   <div className="pt-4 border-t border-white/5 flex items-center justify-between">
                     <button
                       onClick={() => setSelectedJob(job)}
-                      className="inline-flex items-center justify-center px-6 py-3 bg-gold/10 hover:bg-gold text-gold hover:text-[#0b0f19] font-sans text-[10px] font-bold tracking-[0.15em] uppercase transition-all duration-300 rounded-sm"
+                      className="w-full inline-flex items-center justify-center px-6 py-3.5 bg-gold hover:bg-yellow-500 text-[#0b0f19] font-sans text-[11px] font-bold tracking-[0.15em] uppercase transition-all duration-300 rounded-sm"
                     >
-                      View Job →
+                      View & Apply (REF: {job.ref}) →
                     </button>
                   </div>
                 </div>
@@ -297,13 +476,13 @@ export default function CareersPage() {
             </p>
             <div className="flex flex-wrap gap-4 justify-center">
               <a
-                href="mailto:careers@seedengineering.ae?subject=Speculative Application - CV Submission"
+                href="mailto:hr@seedengineering.com?subject=Speculative Application - CV Submission"
                 className="inline-flex items-center justify-center px-8 py-4 bg-gold hover:bg-yellow-500 text-[#0b0f19] font-sans text-[11px] font-bold tracking-[0.15em] uppercase transition-colors duration-300 rounded-sm"
               >
-                Submit Your CV
+                Submit Your CV to hr@seedengineering.com
               </a>
               <a
-                href="mailto:hr@seedengineering.ae?subject=HR Inquiry"
+                href="mailto:hr@seedengineering.com?subject=HR Inquiry"
                 className="inline-flex items-center justify-center px-8 py-4 border border-white/20 text-white font-sans text-[11px] font-bold tracking-[0.15em] uppercase hover:border-white hover:bg-white/5 transition-colors duration-300 rounded-sm"
               >
                 Email HR
@@ -336,22 +515,41 @@ export default function CareersPage() {
         </div>
       </section>
 
-      {/* Job Details Modal */}
+      {/* Job Details & Application Modal */}
       {selectedJob && (
         <div className="fixed inset-0 z-[100] flex items-center justify-center p-4" onClick={() => setSelectedJob(null)}>
           <div className="absolute inset-0 bg-black/80 backdrop-blur-sm" />
           <div className="relative z-10 bg-[#0d1526] border border-white/10 p-8 md:p-10 max-w-2xl w-full rounded-sm shadow-2xl" onClick={e => e.stopPropagation()}>
             <button onClick={() => setSelectedJob(null)} className="absolute top-4 right-4 text-slate-400 hover:text-white text-xl">✕</button>
-            <span className="text-gold text-[10px] font-bold tracking-[0.2em] uppercase mb-2 block">{selectedJob.department}</span>
+            
+            <div className="flex items-center gap-3 mb-3">
+              <span className="text-gold text-[10px] font-bold tracking-[0.2em] uppercase">{selectedJob.office}</span>
+              <span className="text-gold bg-gold/10 border border-gold/30 px-3 py-1 text-[10px] font-bold tracking-widest uppercase rounded-sm">
+                REF: {selectedJob.ref}
+              </span>
+            </div>
+
             <h2 className="font-serif text-3xl font-bold text-white mb-4">{selectedJob.title}</h2>
-            <p className="text-slate-400 text-sm mb-6">📍 {selectedJob.location} · 💼 {selectedJob.type} · Experience: {selectedJob.experience}</p>
-            <p className="text-slate-300 text-sm leading-relaxed mb-8">{selectedJob.desc}</p>
+            
+            <p className="text-slate-400 text-sm mb-4">📍 {selectedJob.location} · 💼 {selectedJob.type} · Experience: <strong className="text-slate-200">{selectedJob.experience}</strong></p>
+
+            <div className="bg-white/5 border border-white/10 p-4 rounded-sm mb-6 text-sm text-slate-300 leading-relaxed font-light">
+              <span className="text-gold text-[10px] font-bold tracking-widest uppercase block mb-1">Qualification Requirements</span>
+              {selectedJob.qualification}
+            </div>
+
+            <p className="text-slate-300 text-sm leading-relaxed mb-6">{selectedJob.desc}</p>
+
+            <div className="bg-gold/10 border border-gold/30 p-4 rounded-sm mb-8 text-[12px] text-gold font-medium leading-relaxed">
+              ⚠️ <strong>Application Notice:</strong> Please make sure to include the Job Reference Code <strong>REF: {selectedJob.ref}</strong> in your email subject line when submitting your CV to <strong>hr@seedengineering.com</strong>.
+            </div>
+
             <div className="flex flex-wrap gap-4">
               <a
-                href={`mailto:careers@seedengineering.ae?subject=Application for ${encodeURIComponent(selectedJob.title)} - ${encodeURIComponent(selectedJob.location)}`}
+                href={`mailto:hr@seedengineering.com?subject=Application for REF: ${encodeURIComponent(selectedJob.ref)} - ${encodeURIComponent(selectedJob.title)}`}
                 className="inline-flex items-center justify-center px-8 py-4 bg-gold hover:bg-yellow-500 text-[#0b0f19] font-sans text-[11px] font-bold tracking-[0.15em] uppercase transition-colors duration-300 rounded-sm"
               >
-                Apply Now via Email →
+                Apply Now via Email (REF: {selectedJob.ref}) →
               </a>
             </div>
           </div>
