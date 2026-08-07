@@ -755,8 +755,8 @@ export const portfolio: {
         description: ""
     },
     {
-        title: "Port De La Mer Hotel",
-        slug: "port-de-la-mer-hotel",
+        title: "Gran Melia Hotel",
+        slug: "gran-melia-hotel",
         division: "mep",
         clientSector: "Hospitality",
         sector: "Hospitality",
@@ -766,7 +766,7 @@ export const portfolio: {
         architect: "MOMA",
         services: "MEP Design Review & Site Supervision",
         area: "88,909 sqm · 380 Keys",
-        image: "/projects/Port De La Mer Hotel.webp",
+        image: "/projects/Gran Melia Hotel.jpg",
         description: ""
     },
     {

@@ -254,41 +254,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* WHY SEED SECTION */}
-      <section className="py-24 md:py-32 bg-[#0f172a]">
-        <div className="container mx-auto px-6 lg:px-12">
-          <Reveal>
-            <div className="mb-16 max-w-2xl">
-              <span className="text-gold text-[10px] font-semibold tracking-[0.2em] uppercase mb-4 block">WHY CLIENTS HIRE SEED</span>
-              <h2 className="font-serif text-4xl md:text-5xl font-bold text-white mb-6">
-                Why SEED
-              </h2>
-              <p className="text-slate-400 font-light text-[15px] leading-relaxed">
-                Engineering buyers evaluate consultants on outcomes, not credentials. Here is what SEED delivers on every project.
-              </p>
-            </div>
-          </Reveal>
-          <Stagger className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {[
-              { title: 'Engineering First', desc: 'Every system selection is backed by calculations and analysis — not generic templates or past project defaults.' },
-              { title: 'Coordination Driven', desc: 'We reduce site conflicts before construction begins. Clash detection is only the start — the objective is buildability.' },
-              { title: 'Commissioning Focused', desc: 'Performance is verified in the field. Engineering responsibility does not end when drawings are issued.' },
-              { title: 'Regional Expertise', desc: 'Deep understanding of local regulations, authority requirements and climate conditions across multiple jurisdictions.' },
-              { title: 'Lifecycle Thinking', desc: 'Systems optimised for long-term operational efficiency, not just capital cost. We design for the building that will be operated, not just built.' },
-              { title: 'Senior-Led Delivery', desc: 'Our senior engineers run projects. The same engineer who draws the system walks commissioning on site.' },
-            ].map((item, i) => (
-              <StaggerItem key={i}>
-                <div className="p-8 border border-white/8 bg-[#0b0f19] hover:border-gold/40 transition-all duration-300 h-full">
-                  <span className="text-gold text-[11px] font-bold block mb-4">0{i + 1}</span>
-                  <h3 className="text-white font-serif text-lg font-semibold mb-3">{item.title}</h3>
-                  <p className="text-slate-400 text-[13px] font-light leading-relaxed">{item.desc}</p>
-                </div>
-              </StaggerItem>
-            ))}
-          </Stagger>
-        </div>
-      </section>
-
       {/* SECTORS SECTION */}
       <section className="py-24 md:py-32 bg-[#0b0f19]">
         <div className="container mx-auto px-6 lg:px-12 text-center">

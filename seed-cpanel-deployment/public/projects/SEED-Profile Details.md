@@ -278,7 +278,7 @@ XYZ Designers
 
 MEP/AV/ICT/Home 56,400 sqm Automation & G+2P+15 Security Design 
 
-## **Port De La Mer Hotel | Dubai, UAE** 
+## **Gran Melia Hotel | Dubai, UAE** 
 
 ## **PROJECT** 
 
