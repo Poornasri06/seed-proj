@@ -50,12 +50,11 @@ const CONTACT_CARDS = [
 
 const OFFICES = [
   {
-    city: 'Dubai (Headquarters)',
+    city: 'Dubai',
     country: 'United Arab Emirates',
     address: 'Office 1104, Bay Square 13, Business Bay, P.O. Box 12345, Dubai, UAE',
     phone: '+971 4 358 8440',
     email: 'info@seedengineering.ae',
-    flag: '🇦🇪',
   },
   {
     city: 'Kochi',
@@ -63,7 +62,6 @@ const OFFICES = [
     address: '4th Floor, Carnival Infopark, Phase 1, Kakkanad, Kochi, Kerala 682030',
     phone: '+91 484 402 8555',
     email: 'kochi@seedengineering.ae',
-    flag: '🇮🇳',
   },
   {
     city: 'Mumbai',
@@ -71,7 +69,6 @@ const OFFICES = [
     address: '602, Commerz II, International Business Park, Oberoi Garden City, Goregaon East, Mumbai 400063',
     phone: '+91 22 6123 4500',
     email: 'mumbai@seedengineering.ae',
-    flag: '🇮🇳',
   },
   {
     city: 'Bengaluru',
@@ -79,7 +76,6 @@ const OFFICES = [
     address: '3rd Floor, Prestige Meridian II, M.G. Road, Bengaluru, Karnataka 560001',
     phone: '+91 80 4152 7700',
     email: 'bengaluru@seedengineering.ae',
-    flag: '🇮🇳',
   },
   {
     city: 'New Delhi',
@@ -87,7 +83,6 @@ const OFFICES = [
     address: 'Level 4, Rectangle 1, Commercial Complex D4, Saket, New Delhi 110017',
     phone: '+91 11 4051 3300',
     email: 'delhi@seedengineering.ae',
-    flag: '🇮🇳',
   },
   {
     city: 'Pune',
@@ -95,7 +90,6 @@ const OFFICES = [
     address: '5th Floor, Panchshil Business Park, Baner, Pune, Maharashtra 411045',
     phone: '+91 20 6712 9000',
     email: 'pune@seedengineering.ae',
-    flag: '🇮🇳',
   },
   {
     city: 'Singapore',
@@ -103,7 +97,6 @@ const OFFICES = [
     address: '10 Marina Boulevard, #39-00 Marina Bay Financial Centre Tower 2, Singapore 018983',
     phone: '+65 6818 9000',
     email: 'singapore@seedengineering.ae',
-    flag: '🇸🇬',
   },
 ];
 
@@ -412,7 +405,7 @@ export default function ContactPage() {
         <div className="container mx-auto px-6 lg:px-12">
           <Reveal>
             <div className="mb-16 text-center max-w-3xl mx-auto">
-              <span className="text-gold text-[10px] font-semibold tracking-[0.2em] uppercase mb-3 block">LOCATIONS</span>
+              <span className="text-gold text-[10px] font-semibold tracking-[0.2em] uppercase mb-3 block">OUR OFFICES</span>
               <h2 className="text-4xl md:text-5xl font-serif font-bold text-white mb-4">Our Global Presence</h2>
               <p className="text-slate-400 font-light text-[15px] leading-relaxed">
                 With offices across the Middle East and India, our multidisciplinary teams are well positioned to support projects across the region.
@@ -426,11 +419,10 @@ export default function ContactPage() {
                 <div className="bg-[#0b0f19] border border-white/10 p-8 rounded-sm h-full flex flex-col justify-between hover:border-gold/40 transition-colors group">
                   <div>
                     <div className="flex items-center justify-between mb-4">
-                      <span className="text-2xl">{off.flag}</span>
                       <span className="text-gold text-[10px] font-bold tracking-widest uppercase">Office 0{idx + 1}</span>
+                      <span className="text-slate-500 text-[10px] font-bold tracking-widest uppercase">{off.country}</span>
                     </div>
-                    <h3 className="font-serif text-2xl font-bold text-white mb-1 group-hover:text-gold transition-colors">{off.city}</h3>
-                    <p className="text-slate-500 text-[11px] font-semibold tracking-wider uppercase mb-6">{off.country}</p>
+                    <h3 className="font-serif text-2xl font-bold text-white mb-6 group-hover:text-gold transition-colors">{off.city}</h3>
 
                     <div className="space-y-3 border-t border-white/5 pt-4 text-[13px] text-slate-400 font-light">
                       <div>
