@@ -90,6 +90,67 @@ export default function AboutPage() {
         </div>
       </section>
 
+      {/* ============ WHY SEED ============ */}
+      <section className={`${TONE_NAVY} text-white py-24 md:py-32 border-t border-white/10`}>
+        <div className="max-w-container mx-auto px-6">
+          <Reveal>
+            <div className="mb-16">
+              <h2 className="font-sans text-4xl md:text-5xl font-medium leading-[1.05] text-white mb-6">
+                Why SEED
+              </h2>
+              <p className="text-white/65 text-base md:text-lg max-w-3xl leading-relaxed">
+                Engineering buyers evaluate consultants on outcomes, not credentials. Here is what SEED delivers on every project.
+              </p>
+            </div>
+          </Reveal>
+
+          <Stagger className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {[
+              {
+                num: '01',
+                title: 'Engineering First',
+                desc: 'Every system selection is backed by calculations and analysis — not generic templates or past project defaults.',
+              },
+              {
+                num: '02',
+                title: 'Coordination Driven',
+                desc: 'We reduce site conflicts before construction begins. Clash detection is only the start — the objective is buildability.',
+              },
+              {
+                num: '03',
+                title: 'Commissioning Focused',
+                desc: 'Performance is verified in the field. Engineering responsibility does not end when drawings are issued.',
+              },
+              {
+                num: '04',
+                title: 'Regional Expertise',
+                desc: 'Deep understanding of local regulations, authority requirements and climate conditions across multiple jurisdictions.',
+              },
+              {
+                num: '05',
+                title: 'Lifecycle Thinking',
+                desc: 'Systems optimised for long-term operational efficiency, not just capital cost. We design for the building that will be operated, not just built.',
+              },
+              {
+                num: '06',
+                title: 'Senior-Led Delivery',
+                desc: 'Our senior engineers run projects. The same engineer who draws the system walks commissioning on site.',
+              },
+            ].map((card, i) => (
+              <StaggerItem key={i}>
+                <div className="bg-[#050816] border border-white/10 p-8 md:p-10 h-full flex flex-col justify-between hover:border-gold/40 transition-colors group">
+                  <div>
+                    <span className="text-gold text-xs font-bold tracking-widest uppercase block mb-6">{card.num}</span>
+                    <h3 className="font-sans text-2xl font-medium text-white mb-4 group-hover:text-gold transition-colors">{card.title}</h3>
+                    <p className="text-white/60 text-sm leading-relaxed">{card.desc}</p>
+                  </div>
+                </div>
+              </StaggerItem>
+            ))}
+          </Stagger>
+        </div>
+      </section>
+
       {/* ============ LEADERSHIP ============ */}
       <section className={`${TONE_BASE} text-white py-24 md:py-32`}>
         <div className="max-w-container mx-auto px-6">
