@@ -46,7 +46,7 @@ const ARTICLES = [
     id: 5,
     title: 'Commissioning Verification: From Design Intent to Measured Performance',
     category: 'Building Performance',
-    topic: 'Building Performance',
+    topic: 'Fire Protection',
     excerpt: 'Why hands-on field testing and environmental balancing are essential to bridging the gap between theoretical models and real-world utility bills.',
     date: 'June 10, 2026',
     image: '/projects/Al Ajlan KSR HQ Tower.webp',
@@ -62,7 +62,7 @@ const ARTICLES = [
   },
 ];
 
-// Company News
+// Company News (Distinct Architectural Images)
 const COMPANY_NEWS = [
   {
     headline: 'SEED Awarded MEP Design Consultancy for Flagship Waterfront Development',
@@ -225,35 +225,6 @@ export default function InsightsPage() {
                     Read Article →
                   </Link>
                 </div>
-              </div>
-            </div>
-          </Reveal>
-        </div>
-      </section>
-
-      {/* SECTION 08 – INSIGHTS BY TOPIC */}
-      <section className="py-16 bg-[#0b0f19] border-b border-white/5">
-        <div className="container mx-auto px-6 lg:px-12">
-          <Reveal>
-            <div className="mb-8">
-              <span className="text-gold text-[10px] font-semibold tracking-[0.2em] uppercase mb-2 block">INSIGHTS BY TOPIC</span>
-              <h2 className="text-3xl md:text-4xl font-serif font-bold text-white mb-6">Explore by Topic</h2>
-              
-              {/* Clickable Topic Tags Grid / Pills */}
-              <div className="flex flex-wrap gap-3">
-                {TOPICS.map((topic) => (
-                  <button
-                    key={topic}
-                    onClick={() => setSelectedTopic(topic)}
-                    className={`px-5 py-3 text-[11px] font-bold tracking-[0.1em] uppercase rounded-sm border transition-all duration-300 ${
-                      selectedTopic === topic
-                        ? 'bg-gold text-[#0b0f19] border-gold shadow-lg shadow-gold/10'
-                        : 'bg-white/5 text-slate-300 border-white/10 hover:border-gold/50 hover:bg-white/10'
-                    }`}
-                  >
-                    {topic}
-                  </button>
-                ))}
               </div>
             </div>
           </Reveal>
@@ -423,6 +394,35 @@ export default function InsightsPage() {
               </Reveal>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* SECTION 08 – INSIGHTS BY TOPIC (PLACED AFTER MEDIA COVERAGE AS REQUESTED) */}
+      <section className="py-20 bg-[#0f172a] border-t border-white/5">
+        <div className="container mx-auto px-6 lg:px-12">
+          <Reveal>
+            <div className="mb-8">
+              <span className="text-gold text-[10px] font-semibold tracking-[0.2em] uppercase mb-2 block">INSIGHTS BY TOPIC</span>
+              <h2 className="text-3xl md:text-5xl font-serif font-bold text-white mb-6">Explore by Topic</h2>
+              
+              {/* Clickable Topic Tags Grid / Pills */}
+              <div className="flex flex-wrap gap-3">
+                {TOPICS.map((topic) => (
+                  <button
+                    key={topic}
+                    onClick={() => setSelectedTopic(topic)}
+                    className={`px-5 py-3 text-[11px] font-bold tracking-[0.1em] uppercase rounded-sm border transition-all duration-300 ${
+                      selectedTopic === topic
+                        ? 'bg-gold text-[#0b0f19] border-gold shadow-lg shadow-gold/10'
+                        : 'bg-white/5 text-slate-300 border-white/10 hover:border-gold/50 hover:bg-white/10'
+                    }`}
+                  >
+                    {topic}
+                  </button>
+                ))}
+              </div>
+            </div>
+          </Reveal>
         </div>
       </section>
 
