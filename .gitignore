@@ -1,0 +1,16 @@
+node_modules
+.next
+out
+.env
+.env.local
+.env.*.local
+.DS_Store
+*.log
+/data/leads.json
+sanity/node_modules
+sanity/dist
+sources/SEED Brand Elements (1).pdf
+.vscode
+
+seed-website-cpanel.zip
+test-basepath.mjs

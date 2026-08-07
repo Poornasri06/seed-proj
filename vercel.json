@@ -1,5 +1,0 @@
-{
-  "installCommand": "cd seed-cpanel-deployment && npm install",
-  "buildCommand": "cd seed-cpanel-deployment && npm run build",
-  "framework": "nextjs"
-}
