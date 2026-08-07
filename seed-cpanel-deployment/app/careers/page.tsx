@@ -217,7 +217,7 @@ const WHY_JOIN = [
 ];
 
 const LIFE_GALLERY = [
-  { image: '/projects/anand-krishnan.webp', caption: 'Technical Workshops & Leadership Mentorship' },
+  { image: '/projects/ellington-hq.webp', caption: 'Technical Workshops & Leadership Mentorship' },
   { image: '/projects/tbc-bank-headquarters-image-1.webp', caption: 'Modern Studio Offices & BIM Hubs' },
   { image: '/projects/City Walk Mixed Use Development.webp', caption: 'On-Site Field Supervision & Engineering Inspections' },
   { image: '/projects/brass-monkey.webp', caption: 'Team Celebrations & Milestone Events' },
