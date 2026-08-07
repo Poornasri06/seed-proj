@@ -19,7 +19,7 @@ export default function Footer() {
               className="h-10 w-auto brightness-0 invert mb-6"
             />
             <p className="text-slate-400 text-[14px] leading-relaxed max-w-sm">
-              Engineering high-performance buildings from concept to commissioning. MEP design, sustainability, BIM coordination and performance verification across the Middle East, Africa, and Asia.
+              Engineering high-performance buildings from concept to commissioning. SEED delivers integrated MEP design, supervision, sustainability, BIM coordination, and performance-focused engineering services across the Middle East, Africa, and Asia.
             </p>
           </div>
 

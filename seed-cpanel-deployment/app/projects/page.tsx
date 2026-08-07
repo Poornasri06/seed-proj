@@ -154,11 +154,8 @@ function ProjectsContent() {
               <h1 className="text-4xl md:text-5xl font-serif font-bold text-white mb-8">Projects</h1>
               
               <div className="text-slate-400 font-light text-[15px] leading-relaxed max-w-4xl mb-10">
-                <p className="mb-4">
-                  Every project on this page began with a specific engineering problem to solve — whether coordinating MEP systems across 50+ floors, meeting aggressive energy targets, navigating complex authority approvals, or delivering commissioning on a fast-track programme.
-                </p>
-                <p className="mb-6">
-                  SEED brings analytical rigour, coordinated BIM delivery and field commissioning to each project. The result is a building that performs as designed — verified, documented, and handed over with confidence.
+                <p className="mb-6 text-slate-300 text-base md:text-lg font-light leading-relaxed">
+                  Every project reflects SEED’s commitment to engineering excellence, technical precision, and coordinated delivery. From luxury hospitality and high-rise residential developments to commercial, healthcare, infrastructure, and mixed-use projects, our portfolio demonstrates how integrated engineering creates high-performance buildings across the Middle East, Africa, and Asia.
                 </p>
                 {/* Prominent Statistics Bar */}
                 <div className="my-10 p-6 md:p-8 bg-[#0a1124] border border-gold/30 rounded-sm shadow-xl max-w-4xl">
