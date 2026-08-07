@@ -160,8 +160,22 @@ function ProjectsContent() {
                 <p className="mb-6">
                   SEED brings analytical rigour, coordinated BIM delivery and field commissioning to each project. The result is a building that performs as designed — verified, documented, and handed over with confidence.
                 </p>
-                <div className="inline-flex items-center gap-2 text-gold font-semibold tracking-wider text-sm uppercase">
-                  <span>142+ Projects · 28 Cities · 21+ Countries</span>
+                {/* Prominent Statistics Bar */}
+                <div className="my-10 p-6 md:p-8 bg-[#0a1124] border border-gold/30 rounded-sm shadow-xl max-w-4xl">
+                  <div className="grid grid-cols-3 gap-4 md:gap-8 text-center divide-x divide-white/10">
+                    <div className="px-2 md:px-4">
+                      <div className="text-3xl md:text-5xl font-serif font-bold text-gold mb-1">1,000+</div>
+                      <div className="text-[10px] md:text-[12px] font-sans font-bold tracking-[0.2em] uppercase text-white/90">Projects</div>
+                    </div>
+                    <div className="px-2 md:px-4">
+                      <div className="text-3xl md:text-5xl font-serif font-bold text-gold mb-1">28</div>
+                      <div className="text-[10px] md:text-[12px] font-sans font-bold tracking-[0.2em] uppercase text-white/90">Cities</div>
+                    </div>
+                    <div className="px-2 md:px-4">
+                      <div className="text-3xl md:text-5xl font-serif font-bold text-gold mb-1">21</div>
+                      <div className="text-[10px] md:text-[12px] font-sans font-bold tracking-[0.2em] uppercase text-white/90">Countries</div>
+                    </div>
+                  </div>
                 </div>
               </div>
               
