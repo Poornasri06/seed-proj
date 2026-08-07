@@ -62,7 +62,7 @@ const ARTICLES = [
   },
 ];
 
-// Company News without Team Recognition & Industry Events as requested
+// Company News
 const COMPANY_NEWS = [
   {
     headline: 'SEED Awarded MEP Design Consultancy for Flagship Waterfront Development',
@@ -77,6 +77,13 @@ const COMPANY_NEWS = [
     date: 'July 2026',
     desc: 'Expanding our BIM and computational engineering capacity with upgraded facilities to support growing global project volume.',
     image: '/projects/tbc-bank-headquarters-image-1.webp',
+  },
+  {
+    headline: 'Senior Engineering Appointments Strengthen Leadership in Asia-Pacific',
+    category: 'Team Announcements',
+    date: 'June 2026',
+    desc: 'Welcoming industry veterans to lead our Singapore and regional design centres, accelerating Asia-Pacific expansion.',
+    image: '/projects/anand-krishnan.webp',
   },
   {
     headline: 'Strategic Collaboration on Net-Zero Building Technologies Announced',
