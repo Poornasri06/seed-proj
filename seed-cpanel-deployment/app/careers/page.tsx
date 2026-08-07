@@ -197,31 +197,38 @@ const WHY_JOIN = [
   {
     icon: 'M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4',
     title: 'Meaningful Projects',
-    desc: 'Work on iconic developments across hospitality, residential, commercial, healthcare and mixed-use sectors that define city skylines.',
+    desc: 'Work on iconic developments across hospitality, residential, commercial, healthcare and mixed-use sectors.',
   },
   {
     icon: 'M13 7h8m0 0v8m0-8l-8 8-4-4-6 6',
     title: 'Professional Growth',
-    desc: 'Continuous learning, technical development and opportunities to take on greater responsibilities as you advance your career.',
+    desc: 'Continuous learning, technical development and opportunities to take on greater responsibilities.',
   },
   {
     icon: 'M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z',
     title: 'Collaborative Culture',
-    desc: 'Work alongside experienced engineers, designers and multidisciplinary teams in a supportive, transparent environment.',
+    desc: 'Work alongside experienced engineers, designers and multidisciplinary teams in a supportive environment.',
   },
   {
     icon: 'M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z',
     title: 'Innovation & Digital Delivery',
-    desc: 'Use BIM, advanced computational engineering tools and emerging technologies to deliver smarter, high-performance building solutions.',
+    desc: 'Use BIM, advanced engineering tools and emerging technologies to deliver smarter engineering solutions.',
   },
 ];
 
+const LIFE_GALLERY = [
+  { image: '/projects/anand-krishnan.webp', caption: 'Technical Workshops & Leadership Mentorship' },
+  { image: '/projects/tbc-bank-headquarters-image-1.webp', caption: 'Modern Studio Offices & BIM Hubs' },
+  { image: '/projects/City Walk Mixed Use Development.webp', caption: 'On-Site Field Supervision & Engineering Inspections' },
+  { image: '/projects/brass-monkey.webp', caption: 'Team Celebrations & Milestone Events' },
+];
+
 const HIRING_STEPS = [
-  { step: 'Step 01', title: 'Application', desc: 'Submit your CV with the relevant Job Reference Number to hr@seedengineering.com.' },
-  { step: 'Step 02', title: 'Review', desc: 'Our recruitment team reviews your technical qualifications and experience.' },
-  { step: 'Step 03', title: 'Interview', desc: 'Meet our technical leads and management team for in-depth discussion.' },
-  { step: 'Step 04', title: 'Offer', desc: 'Successful candidates receive a competitive formal employment offer.' },
-  { step: 'Step 05', title: 'Welcome to SEED', desc: 'Begin your journey with structured onboarding and project team integration.' },
+  { step: 'Step 01', title: 'Application', desc: 'Submit your application online.' },
+  { step: 'Step 02', title: 'Review', desc: 'Our recruitment team reviews your qualifications and experience.' },
+  { step: 'Step 03', title: 'Interview', desc: 'Meet our technical and leadership teams.' },
+  { step: 'Step 04', title: 'Offer', desc: 'Successful candidates receive an employment offer.' },
+  { step: 'Step 05', title: 'Welcome to SEED', desc: 'Begin your journey with onboarding and team integration.' },
 ];
 
 const OFFICES_FILTER = ['All Openings', 'Dubai Design Office', 'India Outsourcing Office'];
@@ -247,7 +254,7 @@ export default function CareersPage() {
         <div className="absolute inset-0">
           <Image
             src="/modern_mep_interior_1780503503410.webp"
-            alt="SEED Studio Team"
+            alt="SEED Team"
             fill
             className="object-cover opacity-25 mix-blend-overlay"
           />
@@ -257,13 +264,13 @@ export default function CareersPage() {
         <div className="relative z-10 container mx-auto px-6 lg:px-12 text-center max-w-4xl">
           <Reveal>
             <span className="text-gold text-[10px] font-semibold tracking-[0.25em] uppercase mb-4 block">
-              WE ARE HIRING!
+              CAREERS
             </span>
             <h1 className="text-5xl md:text-7xl font-serif font-bold text-white mb-6 leading-tight">
               Build the Future With SEED
             </h1>
             <p className="text-lg md:text-xl font-sans font-light text-slate-400 leading-relaxed max-w-3xl mx-auto mb-10">
-              Join our engineering teams across our Dubai Design Office and India Outsourcing Offices (Bangalore, Pune, Mumbai, Delhi, Koratty) and contribute to landmark projects across the region.
+              Join a team of passionate engineers, designers and professionals committed to delivering innovative engineering solutions. At SEED, you’ll work on landmark developments, collaborate with industry experts and build a career that makes a lasting impact.
             </p>
             <div className="flex flex-wrap gap-4 justify-center">
               <button
@@ -282,7 +289,7 @@ export default function CareersPage() {
         <div className="container mx-auto px-6 lg:px-12">
           <Reveal>
             <div className="mb-16 text-center max-w-3xl mx-auto">
-              <span className="text-gold text-[10px] font-semibold tracking-[0.2em] uppercase mb-3 block">CULTURE & GROWTH</span>
+              <span className="text-gold text-[10px] font-semibold tracking-[0.2em] uppercase mb-3 block">CAREERS</span>
               <h2 className="text-4xl md:text-5xl font-serif font-bold text-white mb-6">Why SEED?</h2>
               <p className="text-slate-400 font-light text-[15px] leading-relaxed">
                 At SEED, we believe great engineering starts with great people. We foster a collaborative, inclusive and high-performance culture where individuals are encouraged to grow, innovate and contribute to projects that shape the built environment.
@@ -311,10 +318,10 @@ export default function CareersPage() {
       </section>
 
       {/* SECTION 03 – LIFE AT SEED */}
-      <section className="py-20 bg-[#0b0f19]">
+      <section className="py-24 bg-[#0b0f19]">
         <div className="container mx-auto px-6 lg:px-12">
           <Reveal>
-            <div className="text-center max-w-3xl mx-auto">
+            <div className="text-center max-w-3xl mx-auto mb-16">
               <span className="text-gold text-[10px] font-semibold tracking-[0.2em] uppercase mb-3 block">STUDIO LIFE</span>
               <h2 className="text-4xl md:text-5xl font-serif font-bold text-white mb-6">Life at SEED</h2>
               <p className="text-slate-400 font-light text-[15px] leading-relaxed">
@@ -322,6 +329,20 @@ export default function CareersPage() {
               </p>
             </div>
           </Reveal>
+
+          {/* Life at SEED Photo Gallery */}
+          <Stagger className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {LIFE_GALLERY.map((item, idx) => (
+              <StaggerItem key={idx}>
+                <div className="group relative aspect-[4/3] rounded-sm overflow-hidden bg-[#0f172a] border border-white/10 hover:border-gold/40 transition-colors">
+                  <Image src={item.image} alt={item.caption} fill className="object-cover transition-transform duration-700 group-hover:scale-105" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent flex items-end p-4">
+                    <p className="text-white text-xs font-medium group-hover:text-gold transition-colors">{item.caption}</p>
+                  </div>
+                </div>
+              </StaggerItem>
+            ))}
+          </Stagger>
         </div>
       </section>
 
@@ -332,10 +353,10 @@ export default function CareersPage() {
           <Reveal>
             <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
               <div>
-                <span className="text-gold text-[10px] font-semibold tracking-[0.2em] uppercase mb-3 block">CAREER OPPORTUNITIES</span>
-                <h2 className="text-4xl md:text-5xl font-serif font-bold text-white mb-2">We Are Hiring!</h2>
+                <span className="text-gold text-[10px] font-semibold tracking-[0.2em] uppercase mb-3 block">OPENINGS</span>
+                <h2 className="text-4xl md:text-5xl font-serif font-bold text-white mb-2">Current Opportunities</h2>
                 <p className="text-slate-400 font-light text-[14px]">
-                  Please mention the relevant <strong className="text-gold font-semibold">Job Reference Number</strong> in your email subject/body when applying.
+                  Explore available vacancies across our Dubai and India design offices.
                 </p>
               </div>
 
@@ -358,14 +379,14 @@ export default function CareersPage() {
             </div>
           </Reveal>
 
-          {/* Vacancies Grid */}
+          {/* Vacancies Cards Grid */}
           <Stagger className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {filteredVacancies.map((job) => (
               <StaggerItem key={job.id}>
                 <div className="bg-[#0b0f19] border border-white/10 p-8 rounded-sm h-full flex flex-col justify-between hover:border-gold/40 transition-colors group relative">
                   <div>
                     <div className="flex items-center justify-between gap-2 mb-4">
-                      <span className="text-gold text-[10px] font-bold tracking-[0.15em] uppercase">{job.office}</span>
+                      <span className="text-gold text-[10px] font-bold tracking-[0.15em] uppercase">{job.department}</span>
                       <span className="text-gold bg-gold/10 border border-gold/30 px-2.5 py-1 text-[10px] font-bold tracking-widest uppercase rounded-sm">
                         REF: {job.ref}
                       </span>
@@ -374,19 +395,22 @@ export default function CareersPage() {
                     <h3 className="font-serif text-2xl font-bold text-white mb-4 group-hover:text-gold transition-colors">{job.title}</h3>
                     
                     <div className="space-y-2 mb-6 text-[13px] text-slate-400 font-light">
-                      <div className="flex items-start gap-2">
+                      <div className="flex items-center gap-2">
                         <span className="text-gold font-bold shrink-0">📍</span>
-                        <span>{job.location}</span>
+                        <span>Location: <strong className="text-white">{job.location}</strong></span>
+                      </div>
+                      <div className="flex items-center gap-2">
+                        <span className="text-gold font-bold shrink-0">🏢</span>
+                        <span>Department: <strong className="text-white">{job.department}</strong></span>
                       </div>
                       <div className="flex items-center gap-2">
                         <span className="text-gold font-bold shrink-0">💼</span>
-                        <span>{job.type} · Experience: <strong className="text-slate-200">{job.experience}</strong></span>
+                        <span>Type: <strong className="text-white">{job.type}</strong></span>
                       </div>
-                    </div>
-
-                    <div className="bg-white/5 border border-white/5 p-4 rounded-sm mb-6 text-[12px] text-slate-300 leading-relaxed font-light">
-                      <span className="text-gold text-[10px] font-bold tracking-widest uppercase block mb-1">Qualification</span>
-                      {job.qualification}
+                      <div className="flex items-center gap-2">
+                        <span className="text-gold font-bold shrink-0">⏱️</span>
+                        <span>Experience Required: <strong className="text-gold font-semibold">{job.experience}</strong></span>
+                      </div>
                     </div>
 
                     <p className="text-slate-400 text-[13px] font-light leading-relaxed mb-8">{job.desc}</p>
@@ -397,7 +421,7 @@ export default function CareersPage() {
                       onClick={() => setSelectedJob(job)}
                       className="w-full inline-flex items-center justify-center px-6 py-3.5 bg-gold hover:bg-yellow-500 text-[#0b0f19] font-sans text-[11px] font-bold tracking-[0.15em] uppercase transition-all duration-300 rounded-sm"
                     >
-                      View & Apply (REF: {job.ref}) →
+                      View Job →
                     </button>
                   </div>
                 </div>
@@ -412,13 +436,12 @@ export default function CareersPage() {
         <div className="container mx-auto px-6 lg:px-12">
           <Reveal>
             <div className="mb-16 text-center max-w-3xl mx-auto">
-              <span className="text-gold text-[10px] font-semibold tracking-[0.2em] uppercase mb-3 block">RECRUITMENT TIMELINE</span>
+              <span className="text-gold text-[10px] font-semibold tracking-[0.2em] uppercase mb-3 block">HIRING TIMELINE</span>
               <h2 className="text-4xl md:text-5xl font-serif font-bold text-white mb-4">Our Recruitment Process</h2>
-              <p className="text-slate-400 font-light text-[15px]">A transparent 5-step methodology designed to evaluate mutual fit and technical excellence.</p>
             </div>
           </Reveal>
 
-          {/* Horizontal Process Steps */}
+          {/* Horizontal Timeline Steps */}
           <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6">
             {HIRING_STEPS.map((st, i) => (
               <Reveal key={i} delay={i * 0.1}>
@@ -449,10 +472,10 @@ export default function CareersPage() {
             </p>
             <div className="flex flex-wrap gap-4 justify-center">
               <a
-                href="mailto:hr@seedengineering.com?subject=Speculative Application - CV Submission"
+                href="mailto:hr@seedengineering.com?subject=Speculative Application - Submit Your CV"
                 className="inline-flex items-center justify-center px-8 py-4 bg-gold hover:bg-yellow-500 text-[#0b0f19] font-sans text-[11px] font-bold tracking-[0.15em] uppercase transition-colors duration-300 rounded-sm"
               >
-                Submit Your CV to hr@seedengineering.com
+                Submit Your CV
               </a>
               <a
                 href="mailto:hr@seedengineering.com?subject=HR Inquiry"
@@ -504,7 +527,8 @@ export default function CareersPage() {
 
             <h2 className="font-serif text-3xl font-bold text-white mb-4">{selectedJob.title}</h2>
             
-            <p className="text-slate-400 text-sm mb-4">📍 {selectedJob.location} · 💼 {selectedJob.type} · Experience: <strong className="text-slate-200">{selectedJob.experience}</strong></p>
+            <p className="text-slate-400 text-sm mb-4">📍 Location: <strong className="text-white">{selectedJob.location}</strong> · 🏢 Department: <strong className="text-white">{selectedJob.department}</strong></p>
+            <p className="text-slate-400 text-sm mb-6">💼 Type: <strong className="text-white">{selectedJob.type}</strong> · Experience Required: <strong className="text-gold font-semibold">{selectedJob.experience}</strong></p>
 
             <div className="bg-white/5 border border-white/10 p-4 rounded-sm mb-6 text-sm text-slate-300 leading-relaxed font-light">
               <span className="text-gold text-[10px] font-bold tracking-widest uppercase block mb-1">Qualification Requirements</span>
