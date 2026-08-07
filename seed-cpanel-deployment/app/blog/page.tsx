@@ -231,24 +231,24 @@ export default function InsightsPage() {
         </div>
       </section>
 
-      {/* SECTION 08 – INSIGHTS BY TOPIC (FILTER CONTROL) */}
-      <section className="py-12 bg-[#0b0f19] border-b border-white/5">
+      {/* SECTION 08 – INSIGHTS BY TOPIC */}
+      <section className="py-16 bg-[#0b0f19] border-b border-white/5">
         <div className="container mx-auto px-6 lg:px-12">
           <Reveal>
-            <div className="flex flex-col md:flex-row md:items-center justify-between gap-6">
-              <div>
-                <span className="text-gold text-[10px] font-semibold tracking-[0.2em] uppercase mb-1 block">EXPLORE BY TOPIC</span>
-                <h2 className="text-2xl font-serif font-bold text-white">Topics</h2>
-              </div>
-              <div className="flex flex-wrap gap-2">
+            <div className="mb-8">
+              <span className="text-gold text-[10px] font-semibold tracking-[0.2em] uppercase mb-2 block">INSIGHTS BY TOPIC</span>
+              <h2 className="text-3xl md:text-4xl font-serif font-bold text-white mb-6">Explore by Topic</h2>
+              
+              {/* Clickable Topic Tags Grid / Pills */}
+              <div className="flex flex-wrap gap-3">
                 {TOPICS.map((topic) => (
                   <button
                     key={topic}
                     onClick={() => setSelectedTopic(topic)}
-                    className={`px-4 py-2 text-[11px] font-semibold tracking-wider uppercase rounded-sm border transition-all ${
+                    className={`px-5 py-3 text-[11px] font-bold tracking-[0.1em] uppercase rounded-sm border transition-all duration-300 ${
                       selectedTopic === topic
-                        ? 'bg-gold text-[#0b0f19] border-gold'
-                        : 'bg-white/5 text-slate-300 border-white/10 hover:border-gold/50'
+                        ? 'bg-gold text-[#0b0f19] border-gold shadow-lg shadow-gold/10'
+                        : 'bg-white/5 text-slate-300 border-white/10 hover:border-gold/50 hover:bg-white/10'
                     }`}
                   >
                     {topic}
