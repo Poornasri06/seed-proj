@@ -84,12 +84,10 @@ export default function AboutPage() {
         <div className="max-w-container mx-auto px-6">
           <Reveal>
             <div className="mb-16">
-              <h2 className="font-sans text-4xl md:text-5xl font-medium leading-[1.05] text-white mb-6">
-                Why SEED
+              <p className="label text-champagne mb-5 tracking-[0.3em]">WHY SEED</p>
+              <h2 className="font-sans text-4xl md:text-5xl lg:text-6xl font-medium leading-[1.05]">
+                Engineering That Delivers More Than Design
               </h2>
-              <p className="text-white/65 text-base md:text-lg max-w-3xl leading-relaxed">
-                Engineering buyers evaluate consultants on outcomes, not credentials. Here is what SEED delivers on every project.
-              </p>
             </div>
           </Reveal>
 
@@ -97,33 +95,28 @@ export default function AboutPage() {
             {[
               {
                 num: '01',
-                title: 'Engineering First',
-                desc: 'Every system selection is backed by calculations and analysis — not generic templates or past project defaults.',
+                title: 'Engineering Excellence',
+                desc: 'Every engineering decision is driven by technical expertise, performance analysis and long-term operational value.',
               },
               {
                 num: '02',
-                title: 'Coordination Driven',
-                desc: 'We reduce site conflicts before construction begins. Clash detection is only the start — the objective is buildability.',
+                title: 'Integrated Design',
+                desc: 'MEP engineering, sustainability, BIM coordination and commissioning are delivered through a fully integrated approach.',
               },
               {
                 num: '03',
-                title: 'Commissioning Focused',
-                desc: 'Performance is verified in the field. Engineering responsibility does not end when drawings are issued.',
+                title: 'Performance Verification',
+                desc: 'Our involvement extends beyond design through supervision, testing and commissioning support to ensure systems perform as intended.',
               },
               {
                 num: '04',
-                title: 'Regional Expertise',
-                desc: 'Deep understanding of local regulations, authority requirements and climate conditions across multiple jurisdictions.',
+                title: 'Digital Delivery',
+                desc: 'Advanced BIM workflows improve coordination, reduce clashes and enhance project delivery.',
               },
               {
                 num: '05',
-                title: 'Lifecycle Thinking',
-                desc: 'Systems optimised for long-term operational efficiency, not just capital cost. We design for the building that will be operated, not just built.',
-              },
-              {
-                num: '06',
-                title: 'Senior-Led Delivery',
-                desc: 'Our senior engineers run projects. The same engineer who draws the system walks commissioning on site.',
+                title: 'Regional Expertise',
+                desc: 'Extensive experience across multiple markets enables SEED to deliver solutions aligned with local authority requirements and international best practices.',
               },
             ].map((card, i) => (
               <StaggerItem key={i}>
@@ -147,12 +140,10 @@ export default function AboutPage() {
             <Reveal>
               <p className="label text-champagne mb-5 tracking-[0.3em]">LEADERSHIP</p>
               <h2 className="font-sans text-4xl md:text-5xl lg:text-6xl font-medium leading-[1.05]">
-                Meet the Management Team
+                Engineering Leadership
               </h2>
-              <p className="mt-6 text-white/55 leading-relaxed">
-                Our people are our roots. The leadership team goes the extra mile to stay
-                involved in live projects in addition to their administrative responsibilities —
-                bringing decades of experience delivering quality projects across the world.
+              <p className="mt-6 text-white/70 text-base md:text-lg leading-relaxed font-light">
+                SEED’s leadership team remains actively involved throughout every stage of project delivery, bringing decades of engineering expertise, strategic direction and technical excellence to every commission.
               </p>
             </Reveal>
           </div>
