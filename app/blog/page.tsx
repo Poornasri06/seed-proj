@@ -13,7 +13,7 @@ const ARTICLES = [
     topic: 'Building Performance',
     excerpt: 'Detailed analysis of chilled water plant design, variable primary pumping, and thermal energy storage in Middle Eastern developments.',
     date: 'August 2, 2026',
-    image: '/projects/Gran Melia Hotel.jpg',
+    image: '/projects/wasl-tower.webp',
   },
   {
     id: 2,
