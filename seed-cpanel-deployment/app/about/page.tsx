@@ -47,9 +47,8 @@ export default function AboutPage() {
             </h1>
           </Reveal>
           <Reveal delay={0.18}>
-            <p className="mt-10 max-w-2xl text-lg text-white/65 leading-relaxed">
-              SEED Engineering was founded in early 2005 with a single belief — that the systems
-              inside a building deserve the same craft as the architecture around them.
+            <p className="mt-10 max-w-3xl text-lg md:text-xl text-white/70 leading-relaxed font-light">
+              Since 2005, SEED has delivered integrated MEP engineering design, supervision, sustainability consulting, BIM coordination and commissioning services for complex developments across the Middle East, Africa and India. Our engineering solutions prioritise performance, efficiency and long-term value throughout the building lifecycle.
             </p>
           </Reveal>
         </div>
