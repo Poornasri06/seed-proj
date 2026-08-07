@@ -262,6 +262,20 @@ function ProjectsContent() {
             </div>
           )}
 
+          {/* SECTION 05 – CALL TO ACTION */}
+          <div className="mt-32 pt-20 border-t border-white/10 text-center max-w-4xl mx-auto">
+            <Reveal>
+              <span className="text-gold text-[10px] font-semibold tracking-[0.2em] uppercase mb-4 block">NEXT STEPS</span>
+              <h2 className="font-serif text-3xl md:text-5xl font-bold text-white mb-6">Let’s Discuss Your Next Project</h2>
+              <p className="text-slate-400 font-light text-[15px] leading-relaxed mb-10 max-w-2xl mx-auto">
+                Whether you’re planning a luxury hospitality destination, residential community, commercial tower, healthcare facility, or critical infrastructure, our multidisciplinary engineering team is ready to support your project from concept to commissioning.
+              </p>
+              <Link href="/contact" className="inline-flex items-center justify-center px-10 py-5 bg-gold hover:bg-yellow-500 text-[#0b0f19] font-sans text-[11px] font-bold tracking-[0.15em] uppercase transition-colors duration-300 rounded-sm">
+                Contact Our Team
+              </Link>
+            </Reveal>
+          </div>
+
         </div>
       </div>
 
