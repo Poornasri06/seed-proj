@@ -19,7 +19,7 @@ const milestones = [
   { year: '2010', t: 'International expansion', b: 'First projects beyond the UAE — into India and East Africa. The first hospitality flagships were delivered in this period.' },
   { year: '2014', t: 'Design centres in 5 cities', b: 'Offices established in Singapore, Mumbai, Kochi and Bangalore, supporting projects across Asia and the subcontinent.' },
   { year: '2018', t: 'Sustainability practice', b: 'A dedicated sustainability group formed within SEED to deliver management and advisory services for green building projects across the UAE and India.' },
-  { year: '2024', t: '250+ projects · 17 countries', b: 'Active across 28 cities. A team of 200+ design professionals serving hospitality, healthcare, residential, sports, cultural and commercial sectors.' },
+  { year: '2024', t: '250+ projects · 21+ countries', b: 'Active across 28 cities. A team of 200+ design professionals serving hospitality, healthcare, residential, sports, cultural and commercial sectors.' },
 ];
 
 
@@ -151,10 +151,10 @@ export default function AboutPage() {
         <div className="absolute inset-0 grid-bg opacity-30" />
         <div className="relative max-w-container mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-10 text-center">
           {[
-            { v: 20, suf: '+', l: 'Years in Practice' },
+            { v: 21, suf: '+', l: 'Years of Experience' },
             { v: 200, suf: '+', l: 'Design Professionals' },
             { v: 7, suf: '', l: 'Design Centres' },
-            { v: 17, suf: '', l: 'Countries' },
+            { v: 21, suf: '+', l: 'Countries' },
           ].map((s) => (
             <Reveal key={s.l}>
               <p className="font-sans text-5xl md:text-7xl font-medium text-white">

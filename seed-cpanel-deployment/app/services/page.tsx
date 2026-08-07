@@ -11,7 +11,7 @@ const SERVICES_DATA = [
   {
     id: 'mep-design',
     title: 'MEP Design',
-    image: '/services/MEP.png',
+    image: '/services/mep-design-pic2.jpg',
     list: [
       'HVAC Systems',
       'Electrical & Power Distribution',

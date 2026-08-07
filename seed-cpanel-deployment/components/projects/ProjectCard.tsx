@@ -24,7 +24,7 @@ export function ProjectCard({ project }: { project: ProjectCardData }) {
 
   return (
     <Link
-      href={`/${project.division === 'pool' ? 'pool' : 'mep'}/projects#${project.slug}`}
+      href={`/projects/${project.slug}`}
       className="group flex flex-col h-full bg-ink text-white border border-white/5 hover:border-gold/50 transition-colors"
     >
       <div className="relative overflow-hidden aspect-[4/3]">
