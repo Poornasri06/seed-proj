@@ -311,10 +311,10 @@ export default function CareersPage() {
       </section>
 
       {/* SECTION 03 – LIFE AT SEED */}
-      <section className="py-24 bg-[#0b0f19]">
+      <section className="py-20 bg-[#0b0f19]">
         <div className="container mx-auto px-6 lg:px-12">
           <Reveal>
-            <div className="mb-16 text-center max-w-3xl mx-auto">
+            <div className="text-center max-w-3xl mx-auto">
               <span className="text-gold text-[10px] font-semibold tracking-[0.2em] uppercase mb-3 block">STUDIO LIFE</span>
               <h2 className="text-4xl md:text-5xl font-serif font-bold text-white mb-6">Life at SEED</h2>
               <p className="text-slate-400 font-light text-[15px] leading-relaxed">
@@ -322,33 +322,6 @@ export default function CareersPage() {
               </p>
             </div>
           </Reveal>
-
-          {/* Photo Gallery Grid */}
-          <Stagger className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {[
-              { img: '/modern_mep_interior_1780503503410.webp', title: 'Design & Collaboration Studio' },
-              { img: '/hero.webp', title: 'On-Site Technical Inspections' },
-              { img: '/skyscraper_looking_up_1780504822033.webp', title: 'High-Rise Engineering Reviews' },
-              { img: '/projects/anand-krishnan.webp', title: 'Leadership & Mentorship' },
-              { img: '/projects/tbc-bank-headquarters-image-1.webp', title: 'BIM & Computational Workshops' },
-              { img: '/dubai_skyline_night_1780503516791.webp', title: 'Team Celebrations & Milestones' },
-            ].map((item, idx) => (
-              <StaggerItem key={idx}>
-                <div className="group relative aspect-[4/3] overflow-hidden rounded-sm border border-white/5 bg-[#0a1020]">
-                  <Image
-                    src={item.img}
-                    alt={item.title}
-                    fill
-                    className="object-cover grayscale-[30%] group-hover:grayscale-0 transition-all duration-700 group-hover:scale-105"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#0b0f19]/90 via-transparent to-transparent opacity-80 group-hover:opacity-60 transition-opacity" />
-                  <div className="absolute bottom-4 left-4 right-4">
-                    <span className="text-white font-serif text-sm font-semibold">{item.title}</span>
-                  </div>
-                </div>
-              </StaggerItem>
-            ))}
-          </Stagger>
         </div>
       </section>
 
