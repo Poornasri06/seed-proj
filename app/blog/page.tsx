@@ -83,28 +83,28 @@ const COMPANY_NEWS = [
     category: 'Team Announcements',
     date: 'June 2026',
     desc: 'Welcoming industry veterans to lead our Singapore and regional design centres, accelerating Asia-Pacific expansion.',
-    image: '/projects/SAAS - St.Regis.webp',
+    image: '/projects/business-tower-difc-difc-business-tower.webp',
   },
   {
     headline: 'Strategic Collaboration on Net-Zero Building Technologies Announced',
     category: 'New Partnerships',
     date: 'May 2026',
     desc: 'Partnering with leading green research institutes to benchmark machine-learning energy simulation tools.',
-    image: '/projects/Port De La Mer Hotel.webp',
+    image: '/projects/Mandarin Jumeirah Beach Resort.webp',
   },
   {
     headline: 'SEED Achieves International Quality and Environmental ISO Standards',
     category: 'Certifications',
     date: 'April 2026',
     desc: 'Formal accreditation for ISO 9001 quality management and ISO 14001 environmental management across all design centres.',
-    image: '/projects/Al Ajlan KSR HQ Tower.webp',
+    image: '/projects/Iconic Tower.webp',
   },
   {
     headline: 'Celebrating 20+ Years of Engineering Excellence Across 21 Countries',
     category: 'Major Milestones',
     date: 'March 2026',
     desc: 'Reflecting on two decades of high-performance buildings, 1,000+ completed projects, and over 200 dedicated professionals.',
-    image: '/projects/wasl-tower.webp',
+    image: '/projects/Namaste Tower.webp',
   },
 ];
 
