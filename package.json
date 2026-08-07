@@ -1,0 +1,9 @@
+{
+  "name": "proj-seed",
+  "private": true,
+  "scripts": {
+    "dev": "npm --prefix seed-cpanel-deployment run dev",
+    "build": "npm --prefix seed-cpanel-deployment run build",
+    "start": "npm --prefix seed-cpanel-deployment run start"
+  }
+}
