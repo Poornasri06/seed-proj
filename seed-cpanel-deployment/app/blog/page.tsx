@@ -7,6 +7,7 @@ import { Reveal, Stagger, StaggerItem } from '@/components/ui/Reveal';
 
 const COMPANY_NEWS = [
   {
+    slug: 'sanu-mathew-executive-of-the-year',
     headline: 'Sanu Mathew | Honourable Achievement for Executive of the Year',
     category: 'Media Coverage',
     date: '18 Jun 2026',
@@ -14,6 +15,7 @@ const COMPANY_NEWS = [
     image: '/projects/news-sanu-mathew-award.webp',
   },
   {
+    slug: 'st-regis-branded-residences-honourable-achievement',
     headline: 'St. Regis Branded Residences | Honourable Achievement',
     category: 'Media Coverage',
     date: '17 Jun 2026',
@@ -21,6 +23,7 @@ const COMPANY_NEWS = [
     image: '/projects/news-st-regis-award.webp',
   },
   {
+    slug: 'wasl-tower-mep-project-of-the-year',
     headline: 'Wasl Tower | MEP Project of the Year',
     category: 'Media Coverage',
     date: '16 Jun 2026',
@@ -28,6 +31,7 @@ const COMPANY_NEWS = [
     image: '/projects/news-wasl-tower-award.webp',
   },
   {
+    slug: 'seed-engineering-latest-news',
     headline: 'SEED Engineering Latest Media Coverage',
     category: 'Media Coverage',
     date: '15 Jun 2026',
@@ -35,6 +39,7 @@ const COMPANY_NEWS = [
     image: '/projects/news-seed-media-profile.webp',
   },
   {
+    slug: 'sustainable-mep-solutions-wasl-tower',
     headline: 'SEED Engineering Consultants Sustainable MEP Solutions for Wasl Tower',
     category: 'Media Coverage',
     date: '12 Jun 2026',
@@ -90,27 +95,40 @@ export default function InsightsPage() {
             {COMPANY_NEWS.map((news, idx) => (
               <StaggerItem key={idx}>
                 <div 
-                  onClick={() => setActiveModal(news)}
                   className="bg-[#0b0f19] border border-white/8 p-6 rounded-sm h-full flex flex-col justify-between group hover:border-gold/40 transition-colors cursor-pointer"
                 >
                   <div>
-                    <div className="relative aspect-[16/9] w-full mb-6 overflow-hidden rounded-sm bg-[#060e25]">
+                    <Link href={`/blog/${news.slug}`} className="block relative aspect-[16/9] w-full mb-6 overflow-hidden rounded-sm bg-[#060e25]">
                       <Image 
                         src={news.image} 
                         alt={news.headline} 
                         fill 
                         className="object-cover object-top transition-transform duration-700 group-hover:scale-105" 
                       />
-                    </div>
+                    </Link>
                     <div className="flex items-center justify-between mb-3">
                       <span className="text-gold text-[10px] font-bold tracking-[0.15em] uppercase">{news.category}</span>
                       <span className="text-slate-500 text-[11px]">{news.date}</span>
                     </div>
-                    <h3 className="font-serif text-lg font-bold text-[#fff] mb-3 group-hover:text-gold transition-colors">{news.headline}</h3>
-                    <p className="text-slate-400 text-[13px] font-light leading-relaxed mb-4">{news.desc}</p>
-                    <span className="text-gold text-[11px] font-bold tracking-wider uppercase inline-flex items-center gap-1 group-hover:translate-x-1 transition-transform">
+                    <Link href={`/blog/${news.slug}`}>
+                      <h3 className="font-serif text-lg font-bold text-white mb-3 group-hover:text-gold transition-colors">{news.headline}</h3>
+                    </Link>
+                    <p className="text-slate-400 text-[13px] font-light leading-relaxed mb-6">{news.desc}</p>
+                  </div>
+
+                  <div className="flex items-center justify-between pt-4 border-t border-white/5">
+                    <Link 
+                      href={`/blog/${news.slug}`} 
+                      className="text-gold text-[11px] font-bold tracking-wider uppercase inline-flex items-center gap-1 hover:underline"
+                    >
                       Read Full Article →
-                    </span>
+                    </Link>
+                    <button
+                      onClick={() => setActiveModal(news)}
+                      className="text-slate-400 hover:text-white text-[10px] uppercase tracking-widest bg-white/5 hover:bg-white/10 px-3 py-1.5 rounded-sm transition-colors"
+                    >
+                      🔍 Preview Image
+                    </button>
                   </div>
                 </div>
               </StaggerItem>
@@ -119,14 +137,14 @@ export default function InsightsPage() {
         </div>
       </section>
 
-      {/* ARTICLE / IMAGE MODAL */}
+      {/* ARTICLE / IMAGE PREVIEW MODAL */}
       {activeModal && (
         <div 
           className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-md p-4 md:p-8"
           onClick={() => setActiveModal(null)}
         >
           <div 
-            className="bg-[#0f172a] border border-white/15 max-w-4xl w-full max-h-[90vh] overflow-y-auto rounded-sm p-6 md:p-10 relative text-slate-300"
+            className="bg-[#0f172a] border border-white/15 max-w-4xl w-full max-h-[90vh] overflow-y-auto rounded-sm p-6 md:p-10 relative text-slate-300 shadow-2xl"
             onClick={e => e.stopPropagation()}
           >
             <button
@@ -148,10 +166,16 @@ export default function InsightsPage() {
             <p className="text-slate-300 font-light leading-relaxed text-base md:text-lg mb-6">
               {activeModal.desc}
             </p>
-            <div className="pt-6 border-t border-white/10 flex justify-end">
+            <div className="pt-6 border-t border-white/10 flex items-center justify-between">
+              <Link
+                href={`/blog/${activeModal.slug}`}
+                className="px-8 py-3 bg-gold hover:bg-yellow-500 text-[#0b0f19] font-sans text-xs font-bold tracking-[0.15em] uppercase transition-colors rounded-sm"
+              >
+                Go to Dedicated Article Page →
+              </Link>
               <button
                 onClick={() => setActiveModal(null)}
-                className="px-8 py-3 bg-gold hover:bg-yellow-500 text-[#0b0f19] font-sans text-xs font-bold tracking-[0.15em] uppercase transition-colors rounded-sm"
+                className="px-6 py-3 bg-white/10 hover:bg-white/20 text-white font-sans text-xs font-bold tracking-[0.15em] uppercase transition-colors rounded-sm"
               >
                 Close Preview
               </button>

@@ -6,7 +6,7 @@ export const fallbackPosts = [
     category: 'Media Coverage',
     excerpt: 'Shaping landmark skylines, the company stands for building energy-efficient projects. SEED is a global engineering services firm in operation for almost two decades...',
     publishedAt: '2026-06-12T09:00:00Z',
-    image: '/seed-wasl-tower-news.webp',
+    image: '/projects/news-wasl-tower-article.webp',
     content: `Shaping landmark skylines, the company stands for building energy-efficient projects SEED is a global engineering services firm in operation for almost two decades. It is a boutique MEP (Mechanical, Electrical and Plumbing) consultancy company providing sustainable design solutions and supervision of landmark projects in the Middle East, Central Asia, Africa and the Indian subcontinent. Wasl Tower, a mixed-use 302 metres tall building consisting of two basements, a ground level and 64 floors of offices, a Mandarin Hotel and high-end residential apartments on Sheikh Zayed Road, Dubai, is a significant addition to the project portfolio of SEED, which has provided the complete MEP design and supervision for it.
 
 "We have been involved in the MEP design and supervision from Day 1 of the Wasl Tower project with 7 engineers engaged in constant supervision. We were first appointed for this by Werner Sobek the lead engineering consultant and UN Studio, the lead architectural design consultant of the Wasl Tower. They chose SEED after coming to know of us through a couple of high-rise building projects that we had done especially a super high-rise 89 storied building in India. We are now doing a couple of other projects also with Werner Sobek and UN Studio. We have all worked to make the top-notch Wasl Tower the most energy-efficient building of its magnitude," informs Sanu Mathew, Founder & Managing Director of SEED. 
@@ -30,8 +30,8 @@ Wasl is one of the largest developers in the region and has positively added val
     category: 'Media Coverage',
     excerpt: 'Read the latest updates and media coverage featuring SEED Engineering.',
     publishedAt: '2026-06-15T09:00:00Z',
-    image: '/blog/seed news 2.jpg',
-    content: 'Stay tuned for more updates and insights from SEED Engineering. We continue to innovate and lead in the MEP and sustainability sectors globally.'
+    image: '/projects/news-seed-media-profile.webp',
+    content: 'SEED Engineering Consultants is a boutique engineering consultancy specialising in fully integrated MEP, ELV, IT, AV, Security, Pools, Water Features and Spa design. Established in 2005 and headquartered in Dubai, SEED has built a strong reputation for delivering high-performance, coordinated engineering solutions across the Middle East, East Africa and India.'
   },
   {
     _id: 'b2',
@@ -40,12 +40,10 @@ Wasl is one of the largest developers in the region and has positively added val
     category: 'Media Coverage',
     excerpt: 'At the 16th Big Project Middle East Awards last night, SEED Engineering Consultants was honoured with the MEP Project of the Year award for Wasl Tower.',
     publishedAt: '2026-06-16T09:00:00Z',
-    image: '/blog/blog5-1.jpeg',
+    image: '/projects/news-wasl-tower-award.webp',
     content: `At the 16th Big Project Middle East Awards last night, SEED Engineering Consultants was honoured with the MEP Project of the Year award for Wasl Tower, recognising one of the region’s most technically ambitious and award-winning developments.
 
 At 302m, Wasl Tower is one of Dubai’s most complex mixed-use developments, integrating offices, residences and a 5-star Mandarin Oriental hotel within a highly intricate architectural form.
-
-<img src="/seedv3/blog/blog5-2.jpeg" alt="Wasl Tower Award" class="w-full my-8 rounded-sm shadow-xl" />
 
 Designed by UNS for Wasl Group and working with world-class structural and facade consultant Werner Sobek, the tower’s distinctive twist introduced significant structural challenges. Extensive cross beams and steel girders required precise coordination to deliver MEP systems across the building’s 150,000 sqm footprint.
 
@@ -62,12 +60,10 @@ This award reinforces our commitment to delivering innovative, high-performance 
     category: 'Media Coverage',
     excerpt: 'At the 16th Big Project Middle East Awards last night, we are delighted to share that The St. Regis Branded Residences has received an Honourable Achievement.',
     publishedAt: '2026-06-17T09:00:00Z',
-    image: '/blog/blog6-1.jpeg',
+    image: '/projects/news-st-regis-award.webp',
     content: `At the 16th Big Project Middle East Awards last night, we are delighted to share that The St. Regis Branded Residences has received an Honourable Achievement – Project of the Year (Residential).
 
 This recognition reflects the project’s excellence in delivering premium residential living through a balanced integration of architectural design and high-performance MEP systems.
-
-<img src="/seedv3/blog/blog6-2.jpeg" alt="St. Regis Award" class="w-full my-8 rounded-sm shadow-xl" />
 
 SEED Engineering Consultants is proud to have contributed as the MEP Consultant, working alongside SAAS Properties, BSBG - Brewer Smith Brewer Group and Squire & Partners on this distinguished development.
 
@@ -80,12 +76,10 @@ This award highlights our commitment to delivering technically robust, efficient
     category: 'Media Coverage',
     excerpt: 'A proud milestone for SEED Engineering last week. Our Managing Director, Sanu Mathew, has been recognised with the Honourable Achievement for Executive of the Year.',
     publishedAt: '2026-06-18T09:00:00Z',
-    image: '/blog/blog7-1.jpeg',
+    image: '/projects/news-sanu-mathew-award.webp',
     content: `A proud milestone for SEED Engineering last week. Our Managing Director, Sanu Mathew, has been recognised with the Honourable Achievement for Executive of the Year - Male at the Middle East Consultant Awards 2025.
 
 For over two decades, Sanu has led SEED with focus and intent - guiding our growth across the Gulf, India and East Africa, and building a consultancy grounded in technical rigour, sustainable thinking and long-term value.
-
-<img src="/seedv3/blog/blog7-2.jpeg" alt="Executive of the Year" class="w-full my-8 rounded-sm shadow-xl" />
 
 This recognition is an encouragement for us to keep pushing forward: continuing to raise standards, investing in our people, and delivering engineering that is purposeful, responsible and built to last.
 
