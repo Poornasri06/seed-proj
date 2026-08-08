@@ -21,16 +21,19 @@ export default function BlogPost({ params }: { params: { slug: string } }) {
   return (
     <div className="bg-[#0b0f19] min-h-screen text-white pt-40 pb-24">
       <div className="container mx-auto px-6 lg:px-12">
+        
+        {/* Back Link */}
         <div className="mb-8 max-w-4xl mx-auto">
           <Link 
             href="/blog" 
-            className="text-gold text-xs font-bold tracking-[0.15em] uppercase hover:underline inline-flex items-center gap-2 mb-6"
+            className="text-gold text-xs font-bold tracking-[0.15em] uppercase hover:underline inline-flex items-center gap-2"
           >
-            ← Back to Insights & Media
+            ← Back to Insights
           </Link>
         </div>
 
-        <div className="max-w-4xl mx-auto mb-12">
+        {/* Article Title & Header */}
+        <div className="max-w-4xl mx-auto mb-10">
           <p className="text-gold text-xs font-bold tracking-[0.2em] uppercase mb-4">
             {post.category} <span className="text-white/30 mx-2">·</span> {formatDate(post.publishedAt)}
           </p>
@@ -42,16 +45,18 @@ export default function BlogPost({ params }: { params: { slug: string } }) {
           </p>
         </div>
 
+        {/* High Resolution Full Picture Display */}
         {post.image && (
-          <div className="max-w-4xl mx-auto mb-12 overflow-hidden rounded-sm border border-white/10 shadow-2xl bg-[#0a1124]">
+          <div className="max-w-4xl mx-auto mb-12 overflow-hidden rounded-sm border border-white/10 shadow-2xl bg-[#060e25]">
             <img 
               src={post.image} 
               alt={post.title} 
-              className="w-full h-auto max-h-[600px] object-contain mx-auto"
+              className="w-full h-auto object-cover block"
             />
           </div>
         )}
 
+        {/* Article Body Content */}
         <Section className="pt-0">
           <div className="max-w-3xl mx-auto text-slate-300 font-light leading-relaxed text-base md:text-lg space-y-6">
             {post.content ? (
@@ -62,14 +67,16 @@ export default function BlogPost({ params }: { params: { slug: string } }) {
           </div>
         </Section>
 
-        <div className="max-w-3xl mx-auto pt-12 border-t border-white/10 mt-12 text-center">
+        {/* Footer Navigation */}
+        <div className="max-w-3xl mx-auto pt-12 border-t border-white/10 mt-16 text-center">
           <Link 
             href="/blog" 
-            className="inline-flex items-center justify-center px-8 py-4 bg-gold hover:bg-yellow-500 text-[#0b0f19] font-sans text-xs font-bold tracking-[0.15em] uppercase transition-colors rounded-sm"
+            className="inline-flex items-center justify-center px-10 py-5 bg-gold hover:bg-yellow-500 text-[#0b0f19] font-sans text-xs font-bold tracking-[0.15em] uppercase transition-colors duration-300 rounded-sm shadow-lg"
           >
             ← Return to All Insights
           </Link>
         </div>
+
       </div>
     </div>
   );
