@@ -76,7 +76,7 @@ This award highlights our commitment to delivering technically robust, efficient
     category: 'Media Coverage',
     excerpt: 'A proud milestone for SEED Engineering last week. Our Managing Director, Sanu Mathew, has been recognised with the Honourable Achievement for Executive of the Year.',
     publishedAt: '2026-06-18T09:00:00Z',
-    image: '/projects/news-sanu-mathew-award.webp',
+    image: '/projects/sanu-mathew-award-cert.webp',
     content: `A proud milestone for SEED Engineering last week. Our Managing Director, Sanu Mathew, has been recognised with the Honourable Achievement for Executive of the Year - Male at the Middle East Consultant Awards 2025.
 
 For over two decades, Sanu has led SEED with focus and intent - guiding our growth across the Gulf, India and East Africa, and building a consultancy grounded in technical rigour, sustainable thinking and long-term value.

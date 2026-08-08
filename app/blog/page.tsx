@@ -12,7 +12,7 @@ const COMPANY_NEWS = [
     category: 'Media Coverage',
     date: '18 Jun 2026',
     desc: 'A proud milestone for SEED Engineering last week. Our Managing Director, Sanu Mathew, has been recognised with the Honourable Achievement for Executive of the Year.',
-    image: '/projects/news-sanu-mathew-award.webp',
+    image: '/projects/sanu-mathew-award-cert.webp',
   },
   {
     slug: 'st-regis-branded-residences-honourable-achievement',
