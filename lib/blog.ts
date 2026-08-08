@@ -40,7 +40,7 @@ Wasl is one of the largest developers in the region and has positively added val
     category: 'Media Coverage',
     excerpt: 'At the 16th Big Project Middle East Awards last night, SEED Engineering Consultants was honoured with the MEP Project of the Year award for Wasl Tower.',
     publishedAt: '2026-06-16T09:00:00Z',
-    image: '/projects/news-wasl-tower-award.webp',
+    image: '/projects/wasl-tower-trophy-photo.webp',
     content: `At the 16th Big Project Middle East Awards last night, SEED Engineering Consultants was honoured with the MEP Project of the Year award for Wasl Tower, recognising one of the region’s most technically ambitious and award-winning developments.
 
 At 302m, Wasl Tower is one of Dubai’s most complex mixed-use developments, integrating offices, residences and a 5-star Mandarin Oriental hotel within a highly intricate architectural form.
