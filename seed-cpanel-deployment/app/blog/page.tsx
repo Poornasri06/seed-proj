@@ -109,11 +109,10 @@ const COMPANY_NEWS = [
 ];
 
 const AWARDS = [
-  { title: 'Big Project Middle East Awards', year: '2024', desc: 'MEP Consultancy of the Year for high-rise residential & mixed-use engineering.', icon: '🏆' },
-  { title: 'Autodesk Imagine Awards', year: '2023', desc: 'Excellence in Digital Engineering & Multidisciplinary BIM Coordination.', icon: '📐' },
-  { title: 'CIBSE MENA Awards', year: '2023', desc: 'Building Performance Consultancy Award for energy-efficient building systems.', icon: '🌱' },
-  { title: 'MEERA Awards', year: '2022', desc: 'ISHRAE Award for HVAC Design Innovation and Sustainable Central Plant Engineering.', icon: '🌟' },
-  { title: 'Middle East Consultant Awards', year: '2022', desc: 'Executive Consultancy Award for Technical Rigour & Project Supervision.', icon: '🎖️' },
+  '• Big Project Middle East Awards 2026 – MEP Project of the Year – Wasl Tower',
+  '• Big Project Middle East Awards 2026 – Honourable Achievement – Project of the Year (Residential) – The St. Regis Branded Residences',
+  '• ISHRAE UAE MEERA Awards 2026 – Highly Commended – MEP Project of the Year – Hilton & Holiday Inn',
+  '• Middle East Consultant Awards 2025 – Honourable Achievement – Executive of the Year – Male – Sanu Mathew',
 ];
 
 const EVENTS = [
@@ -319,16 +318,13 @@ export default function InsightsPage() {
             </div>
           </Reveal>
 
-          <Stagger className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
+          <Stagger className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
             {AWARDS.map((aw, i) => (
               <StaggerItem key={i}>
-                <div className="bg-[#0f172a] border border-white/10 p-6 rounded-sm h-full flex flex-col justify-between hover:border-gold/40 transition-colors group">
-                  <div>
-                    <div className="text-3xl mb-4">{aw.icon}</div>
-                    <span className="text-gold text-sm font-serif font-bold block mb-2">{aw.year}</span>
-                    <h3 className="font-serif text-base font-bold text-white mb-3 group-hover:text-gold transition-colors">{aw.title}</h3>
-                    <p className="text-slate-400 text-[12px] font-light leading-relaxed">{aw.desc}</p>
-                  </div>
+                <div className="bg-[#0f172a] border border-white/10 p-8 rounded-sm hover:border-gold/40 transition-colors group flex items-start h-full">
+                  <p className="text-slate-200 text-base md:text-lg leading-relaxed font-light">
+                    {aw}
+                  </p>
                 </div>
               </StaggerItem>
             ))}

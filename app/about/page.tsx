@@ -12,11 +12,10 @@ const TONE_LIFT = 'bg-[#0f172a]';
 const TONE_NAVY = 'bg-[#0a1124]';
 
 const AWARDS = [
-  { title: 'Big Project Middle East Awards', category: 'Engineering Consultant of the Year', icon: '🏆' },
-  { title: 'ISHRAE MEERA Awards', category: 'Excellence in MEP Design & HVAC Innovation', icon: '🌟' },
-  { title: 'Autodesk Imagine Awards', category: 'Best Digital Engineering & BIM Delivery', icon: '📐' },
-  { title: 'CIBSE Awards', category: 'Building Performance & Sustainability Excellence', icon: '🌱' },
-  { title: 'Middle East Consultant Awards', category: 'MEP Project of the Year', icon: '🎖️' },
+  '• Big Project Middle East Awards 2026 – MEP Project of the Year – Wasl Tower',
+  '• Big Project Middle East Awards 2026 – Honourable Achievement – Project of the Year (Residential) – The St. Regis Branded Residences',
+  '• ISHRAE UAE MEERA Awards 2026 – Highly Commended – MEP Project of the Year – Hilton & Holiday Inn',
+  '• Middle East Consultant Awards 2025 – Honourable Achievement – Executive of the Year – Male – Sanu Mathew',
 ];
 
 const GLOBAL_OFFICES = [
@@ -304,15 +303,13 @@ export default function AboutPage() {
             </div>
           </Reveal>
 
-          <Stagger className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          <Stagger className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
             {AWARDS.map((award, idx) => (
               <StaggerItem key={idx}>
-                <div className="bg-[#0b0f19] border border-white/10 p-8 rounded-sm hover:border-gold/40 transition-colors group flex flex-col justify-between h-full">
-                  <div>
-                    <div className="text-4xl mb-6">{award.icon}</div>
-                    <h3 className="font-serif text-2xl font-bold text-white mb-3 group-hover:text-gold transition-colors">{award.title}</h3>
-                    <p className="text-gold text-[11px] font-bold tracking-wider uppercase">{award.category}</p>
-                  </div>
+                <div className="bg-[#0b0f19] border border-white/10 p-8 rounded-sm hover:border-gold/40 transition-colors group flex items-start h-full">
+                  <p className="text-slate-200 text-base md:text-lg leading-relaxed font-light">
+                    {award}
+                  </p>
                 </div>
               </StaggerItem>
             ))}
