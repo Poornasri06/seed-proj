@@ -60,7 +60,7 @@ This award reinforces our commitment to delivering innovative, high-performance 
     category: 'Media Coverage',
     excerpt: 'At the 16th Big Project Middle East Awards last night, we are delighted to share that The St. Regis Branded Residences has received an Honourable Achievement.',
     publishedAt: '2026-06-17T09:00:00Z',
-    image: '/projects/news-st-regis-award.webp',
+    image: '/projects/st-regis-award-portrait.webp',
     content: `At the 16th Big Project Middle East Awards last night, we are delighted to share that The St. Regis Branded Residences has received an Honourable Achievement – Project of the Year (Residential).
 
 This recognition reflects the project’s excellence in delivering premium residential living through a balanced integration of architectural design and high-performance MEP systems.

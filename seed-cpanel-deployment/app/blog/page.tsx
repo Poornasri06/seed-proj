@@ -20,7 +20,7 @@ const COMPANY_NEWS = [
     category: 'Media Coverage',
     date: '17 Jun 2026',
     desc: 'At the 16th Big Project Middle East Awards last night, we are delighted to share that The St. Regis Branded Residences has received an Honourable Achievement.',
-    image: '/projects/news-st-regis-award.webp',
+    image: '/projects/st-regis-award-portrait.webp',
   },
   {
     slug: 'wasl-tower-mep-project-of-the-year',
