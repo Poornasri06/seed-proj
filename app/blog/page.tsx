@@ -5,64 +5,6 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Reveal, Stagger, StaggerItem } from '@/components/ui/Reveal';
 
-const ARTICLES = [
-  {
-    id: 1,
-    title: 'Optimising HVAC Systems for Extreme Thermal Climates',
-    category: 'Engineering',
-    topic: 'Building Performance',
-    excerpt: 'Detailed analysis of chilled water plant design, variable primary pumping, and thermal energy storage in Middle Eastern developments.',
-    date: 'August 2, 2026',
-    image: '/projects/wasl-tower.webp',
-  },
-  {
-    id: 2,
-    title: 'Achieving Net-Zero Operational Carbon in Luxury Hospitality',
-    category: 'Sustainability',
-    topic: 'Hospitality',
-    excerpt: 'How whole-lifecycle carbon modeling and renewable energy integration allow high-end resorts to meet LEED Platinum without compromising guest luxury.',
-    date: 'July 24, 2026',
-    image: '/projects/Port De La Mer Hotel.webp',
-  },
-  {
-    id: 3,
-    title: 'Clash Detection vs Buildability: Advanced BIM Coordination',
-    category: 'BIM',
-    topic: 'BIM',
-    excerpt: 'Moving beyond automated software clash reports to true engineering constructability at complex discipline interfaces.',
-    date: 'July 15, 2026',
-    image: '/projects/The Meriva Collection.webp',
-  },
-  {
-    id: 4,
-    title: 'Digital Twins and IoT Integration in Modern Smart Buildings',
-    category: 'Digital Design',
-    topic: 'Digital Engineering',
-    excerpt: 'Connecting real-time sensor networks to BIM models to drive operational energy efficiency and predictive maintenance.',
-    date: 'June 28, 2026',
-    image: '/projects/SAAS - St.Regis.webp',
-  },
-  {
-    id: 5,
-    title: 'Commissioning Verification: From Design Intent to Measured Performance',
-    category: 'Building Performance',
-    topic: 'Fire Protection',
-    excerpt: 'Why hands-on field testing and environmental balancing are essential to bridging the gap between theoretical models and real-world utility bills.',
-    date: 'June 10, 2026',
-    image: '/projects/Al Ajlan KSR HQ Tower.webp',
-  },
-  {
-    id: 6,
-    title: 'Acoustic Comfort in High-Density Urban Residential Towers',
-    category: 'Acoustics',
-    topic: 'Residential',
-    excerpt: 'Engineering multi-layer noise barrier strategies and vibration isolation for luxury towers adjacent to major transit corridors.',
-    date: 'May 30, 2026',
-    image: '/projects/City Walk Mixed Use Development.webp',
-  },
-];
-
-// Company News (Distinct Architectural Images)
 const COMPANY_NEWS = [
   {
     headline: 'Sanu Mathew | Honourable Achievement for Executive of the Year',
@@ -101,57 +43,8 @@ const COMPANY_NEWS = [
   },
 ];
 
-const AWARDS = [
-  '• Big Project Middle East Awards 2026 – MEP Project of the Year – Wasl Tower',
-  '• Big Project Middle East Awards 2026 – Honourable Achievement – Project of the Year (Residential) – The St. Regis Branded Residences',
-  '• ISHRAE UAE MEERA Awards 2026 – Highly Commended – MEP Project of the Year – Hilton & Holiday Inn',
-  '• Middle East Consultant Awards 2025 – Honourable Achievement – Executive of the Year – Male – Sanu Mathew',
-];
-
-const EVENTS = [
-  { name: 'Big 5 Global', type: 'Exhibition & Panel', date: 'Nov 2026 · Dubai', desc: 'Speaking panel on Smart MEP Infrastructure & AI-Driven HVAC Optimisation.' },
-  { name: 'CTBUH Annual Conference', type: 'Keynote Summit', date: 'Oct 2026 · Global', desc: 'Technical presentation on MEP System Integration in 300m+ Supertall Towers.' },
-  { name: 'CIBSE MENA Technical Seminar', type: 'CPD Workshop', date: 'Sep 2026 · UAE', desc: 'Hosting an interactive session on Field Commissioning & System Verification.' },
-  { name: 'ISHRAE HVAC Expo', type: 'Conference', date: 'Aug 2026 · India', desc: 'Showcasing sustainable central cooling plant case studies across tropical climates.' },
-  { name: 'GBB Hospitality Summit', type: 'Panel Discussion', date: 'Jul 2026 · Regional', desc: 'Designing zero-downtime MEP systems for 5-Star luxury resort destinations.' },
-];
-
-const MEDIA_ITEMS = [
-  { type: 'Magazine Features', outlet: 'Middle East Architect', title: 'How SEED is Engineering Dubai\'s Next Generation of High-Rises', date: 'July 2026' },
-  { type: 'Interviews', outlet: 'Construction Week Online', title: 'Executive Interview: Balancing Luxury Hospitality with Net-Zero Energy Targets', date: 'June 2026' },
-  { type: 'Podcasts', outlet: 'MEP Middle East Podcast', title: 'Episode 42: Clash Detection vs Buildability in Multidisciplinary BIM', date: 'May 2026' },
-  { type: 'Press Releases', outlet: 'Technical Press Release', title: 'SEED Delivers Integrated MEP Commissioning Framework for Wasl Tower', date: 'April 2026' },
-  { type: 'Video Features', outlet: 'Digital Engineering TV', title: 'Inside SEED\'s Computational Design & Digital Twin Workflows', date: 'March 2026' },
-];
-
-const TOPICS = [
-  'All Topics',
-  'Hospitality',
-  'Residential',
-  'Sustainability',
-  'BIM',
-  'Digital Engineering',
-  'Fire Protection',
-  'Building Performance',
-  'Acoustics',
-];
-
 export default function InsightsPage() {
-  const [selectedTopic, setSelectedTopic] = useState('All Topics');
-  const [subscribed, setSubscribed] = useState(false);
-  const [email, setEmail] = useState('');
-
-  const filteredArticles = selectedTopic === 'All Topics'
-    ? ARTICLES
-    : ARTICLES.filter(a => a.category.toLowerCase() === selectedTopic.toLowerCase() || a.topic.toLowerCase() === selectedTopic.toLowerCase());
-
-  const handleSubscribe = (e: React.FormEvent) => {
-    e.preventDefault();
-    if (email) {
-      setSubscribed(true);
-      setEmail('');
-    }
-  };
+  const [activeModal, setActiveModal] = useState<typeof COMPANY_NEWS[0] | null>(null);
 
   return (
     <div className="bg-[#0b0f19] min-h-screen text-slate-300 font-sans selection:bg-gold selection:text-[#0b0f19]">
@@ -177,77 +70,47 @@ export default function InsightsPage() {
               Insights
             </h1>
             <p className="text-lg md:text-xl font-sans font-light text-slate-400 leading-relaxed max-w-3xl mx-auto">
-              Explore SEED’s latest perspectives, industry expertise, project updates, awards and events. From engineering innovation to company milestones, discover how we contribute to shaping the future of the built environment.
+              Practical insights from engineers who design, coordinate and commission complex buildings — covering MEP systems, sustainability, BIM coordination and building performance across the Middle East and beyond.
             </p>
           </Reveal>
         </div>
       </section>
 
-      {/* SECTION 02 – FEATURED INSIGHT */}
-      <section className="py-20 md:py-28 bg-[#0f172a] border-b border-white/5">
-        <div className="container mx-auto px-6 lg:px-12">
-          <Reveal>
-            <div className="mb-12">
-              <span className="text-gold text-[10px] font-semibold tracking-[0.2em] uppercase mb-2 block">FEATURED</span>
-              <h2 className="text-3xl md:text-5xl font-serif font-bold text-white">Featured Insight</h2>
-            </div>
-          </Reveal>
-
-          <Reveal delay={0.1}>
-            <div className="relative bg-[#0a1124] border border-white/10 rounded-sm overflow-hidden grid grid-cols-1 lg:grid-cols-12 gap-0 group hover:border-gold/40 transition-colors">
-              <div className="lg:col-span-7 relative aspect-[16/10] lg:aspect-auto min-h-[340px]">
-                <Image
-                  src="/projects/seed wasl tower news.webp"
-                  alt="Engineering High-Performance Buildings for the Future"
-                  fill
-                  className="object-cover transition-transform duration-700 group-hover:scale-105"
-                />
-                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-transparent to-[#0a1124]/90 hidden lg:block" />
-              </div>
-              <div className="lg:col-span-5 p-8 md:p-12 flex flex-col justify-center">
-                <span className="text-gold text-[10px] font-bold tracking-[0.2em] uppercase mb-4 block">FEATURED ARTICLE</span>
-                <h3 className="font-serif text-2xl md:text-3xl font-bold text-white mb-4 group-hover:text-gold transition-colors leading-tight">
-                  Engineering High-Performance Buildings for the Future
-                </h3>
-                <p className="text-slate-400 font-light text-[14px] leading-relaxed mb-8">
-                  Discover how integrated MEP design, advanced BIM workflows, and continuous performance verification are redefining modern building engineering across complex developments.
-                </p>
-                <div>
-                  <Link href="/blog/engineering-high-performance-buildings" className="inline-flex items-center justify-center px-8 py-4 bg-gold hover:bg-yellow-500 text-[#0b0f19] font-sans text-[11px] font-bold tracking-[0.15em] uppercase transition-colors duration-300 rounded-sm">
-                    Read Article →
-                  </Link>
-                </div>
-              </div>
-            </div>
-          </Reveal>
-        </div>
-      </section>
-
-
-      {/* SECTION 04 – NEWS */}
+      {/* SECTION 02 – NEWS & ARTICLES GRID */}
       <section className="py-24 bg-[#0f172a] border-t border-white/5">
         <div className="container mx-auto px-6 lg:px-12">
           <Reveal>
             <div className="mb-16">
-              <span className="text-gold text-[10px] font-semibold tracking-[0.2em] uppercase mb-3 block">UPDATES</span>
-              <h2 className="text-3xl md:text-5xl font-serif font-bold text-white">Company News</h2>
+              <span className="text-gold text-[10px] font-semibold tracking-[0.2em] uppercase mb-3 block">MEDIA & UPDATES</span>
+              <h2 className="text-3xl md:text-5xl font-serif font-bold text-white">Latest Media Coverage & News</h2>
             </div>
           </Reveal>
 
           <Stagger className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {COMPANY_NEWS.map((news, idx) => (
               <StaggerItem key={idx}>
-                <div className="bg-[#0b0f19] border border-white/8 p-6 rounded-sm h-full flex flex-col justify-between group hover:border-gold/40 transition-colors">
+                <div 
+                  onClick={() => setActiveModal(news)}
+                  className="bg-[#0b0f19] border border-white/8 p-6 rounded-sm h-full flex flex-col justify-between group hover:border-gold/40 transition-colors cursor-pointer"
+                >
                   <div>
                     <div className="relative aspect-[16/9] w-full mb-6 overflow-hidden rounded-sm bg-[#060e25]">
-                      <Image src={news.image} alt={news.headline} fill className="object-cover object-top transition-transform duration-700 group-hover:scale-105" />
+                      <Image 
+                        src={news.image} 
+                        alt={news.headline} 
+                        fill 
+                        className="object-cover object-top transition-transform duration-700 group-hover:scale-105" 
+                      />
                     </div>
                     <div className="flex items-center justify-between mb-3">
                       <span className="text-gold text-[10px] font-bold tracking-[0.15em] uppercase">{news.category}</span>
                       <span className="text-slate-500 text-[11px]">{news.date}</span>
                     </div>
                     <h3 className="font-serif text-lg font-bold text-white mb-3 group-hover:text-gold transition-colors">{news.headline}</h3>
-                    <p className="text-slate-400 text-[13px] font-light leading-relaxed">{news.desc}</p>
+                    <p className="text-slate-400 text-[13px] font-light leading-relaxed mb-4">{news.desc}</p>
+                    <span className="text-gold text-[11px] font-bold tracking-wider uppercase inline-flex items-center gap-1 group-hover:translate-x-1 transition-transform">
+                      Read Full Article →
+                    </span>
                   </div>
                 </div>
               </StaggerItem>
@@ -256,159 +119,49 @@ export default function InsightsPage() {
         </div>
       </section>
 
-      {/* SECTION 05 – AWARDS & RECOGNITION */}
-      <section className="py-24 bg-[#0b0f19] border-t border-white/5">
-        <div className="container mx-auto px-6 lg:px-12">
-          <Reveal>
-            <div className="mb-16 text-center max-w-3xl mx-auto">
-              <span className="text-gold text-[10px] font-semibold tracking-[0.2em] uppercase mb-3 block">ACCOLADES</span>
-              <h2 className="text-3xl md:text-5xl font-serif font-bold text-white mb-4">Awards & Recognition</h2>
-              <p className="text-slate-400 font-light text-[14px]">Industry honors celebrating SEED’s commitment to technical precision and engineering performance.</p>
+      {/* ARTICLE / IMAGE MODAL */}
+      {activeModal && (
+        <div 
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-md p-4 md:p-8"
+          onClick={() => setActiveModal(null)}
+        >
+          <div 
+            className="bg-[#0f172a] border border-white/15 max-w-4xl w-full max-h-[90vh] overflow-y-auto rounded-sm p-6 md:p-10 relative text-slate-300"
+            onClick={e => e.stopPropagation()}
+          >
+            <button
+              onClick={() => setActiveModal(null)}
+              className="absolute top-4 right-4 text-slate-400 hover:text-white text-2xl w-10 h-10 flex items-center justify-center rounded-full bg-white/5 hover:bg-white/10 transition-colors"
+            >
+              ✕
+            </button>
+            <span className="text-gold text-[10px] font-bold tracking-[0.2em] uppercase mb-2 block">{activeModal.category} · {activeModal.date}</span>
+            <h2 className="text-2xl md:text-4xl font-serif font-bold text-white mb-6">{activeModal.headline}</h2>
+            <div className="relative w-full aspect-[4/3] md:aspect-[16/10] mb-6 rounded-sm overflow-hidden bg-[#060e25] border border-white/10">
+              <Image 
+                src={activeModal.image} 
+                alt={activeModal.headline} 
+                fill 
+                className="object-contain" 
+              />
             </div>
-          </Reveal>
-
-          <Stagger className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
-            {AWARDS.map((aw, i) => (
-              <StaggerItem key={i}>
-                <div className="bg-[#0f172a] border border-white/10 p-8 rounded-sm hover:border-gold/40 transition-colors group flex items-start h-full">
-                  <p className="text-slate-200 text-base md:text-lg leading-relaxed font-light">
-                    {aw}
-                  </p>
-                </div>
-              </StaggerItem>
-            ))}
-          </Stagger>
-        </div>
-      </section>
-
-      {/* SECTION 06 – EVENTS */}
-      <section className="py-24 bg-[#0f172a] border-t border-white/5">
-        <div className="container mx-auto px-6 lg:px-12">
-          <Reveal>
-            <div className="mb-16">
-              <span className="text-gold text-[10px] font-semibold tracking-[0.2em] uppercase mb-3 block">ENGAGEMENT</span>
-              <h2 className="text-3xl md:text-5xl font-serif font-bold text-white">Events & Industry Engagement</h2>
+            <p className="text-slate-300 font-light leading-relaxed text-base md:text-lg mb-6">
+              {activeModal.desc}
+            </p>
+            <div className="pt-6 border-t border-white/10 flex justify-end">
+              <button
+                onClick={() => setActiveModal(null)}
+                className="px-8 py-3 bg-gold hover:bg-yellow-500 text-[#0b0f19] font-sans text-xs font-bold tracking-[0.15em] uppercase transition-colors rounded-sm"
+              >
+                Close Preview
+              </button>
             </div>
-          </Reveal>
-
-          <Stagger className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {EVENTS.map((ev, i) => (
-              <StaggerItem key={i}>
-                <div className="bg-[#0b0f19] border border-white/8 p-8 rounded-sm h-full flex flex-col justify-between hover:border-gold/40 transition-colors">
-                  <div>
-                    <span className="text-gold text-[10px] font-bold tracking-[0.15em] uppercase block mb-2">{ev.type}</span>
-                    <h3 className="font-serif text-xl font-bold text-white mb-2">{ev.name}</h3>
-                    <p className="text-slate-400 text-[12px] font-medium mb-4">{ev.date}</p>
-                    <p className="text-slate-400 text-[13px] font-light leading-relaxed">{ev.desc}</p>
-                  </div>
-                </div>
-              </StaggerItem>
-            ))}
-          </Stagger>
-        </div>
-      </section>
-
-      {/* SECTION 07 – MEDIA COVERAGE */}
-      <section className="py-24 bg-[#0b0f19] border-t border-white/5">
-        <div className="container mx-auto px-6 lg:px-12">
-          <Reveal>
-            <div className="mb-16 max-w-3xl">
-              <span className="text-gold text-[10px] font-semibold tracking-[0.2em] uppercase mb-3 block">MEDIA COVERAGE</span>
-              <h2 className="text-3xl md:text-5xl font-serif font-bold text-white">In the Media</h2>
-            </div>
-          </Reveal>
-
-          <div className="space-y-4 max-w-5xl">
-            {MEDIA_ITEMS.map((item, i) => (
-              <Reveal key={i}>
-                <div className="bg-[#0f172a] border border-white/8 p-6 md:p-8 rounded-sm flex flex-col md:flex-row items-start md:items-center justify-between gap-6 hover:border-gold/40 transition-colors group">
-                  <div>
-                    <div className="flex items-center gap-3 mb-2">
-                      <span className="text-gold text-[10px] font-bold tracking-[0.15em] uppercase">{item.type}</span>
-                      <span className="text-slate-600 text-xs">·</span>
-                      <span className="text-slate-300 text-xs font-semibold">{item.outlet}</span>
-                      <span className="text-slate-600 text-xs">·</span>
-                      <span className="text-slate-500 text-xs">{item.date}</span>
-                    </div>
-                    <h3 className="font-serif text-lg md:text-xl font-bold text-white group-hover:text-gold transition-colors">{item.title}</h3>
-                  </div>
-                  <Link href={`/blog/media-${i + 1}`} className="text-gold text-[11px] font-bold tracking-[0.1em] uppercase shrink-0 group-hover:underline flex items-center gap-1">
-                    Read More →
-                  </Link>
-                </div>
-              </Reveal>
-            ))}
           </div>
         </div>
-      </section>
+      )}
 
-      {/* SECTION 08 – INSIGHTS BY TOPIC (PLACED AFTER MEDIA COVERAGE AS REQUESTED) */}
-      <section className="py-20 bg-[#0f172a] border-t border-white/5">
-        <div className="container mx-auto px-6 lg:px-12">
-          <Reveal>
-            <div className="mb-8">
-              <span className="text-gold text-[10px] font-semibold tracking-[0.2em] uppercase mb-2 block">INSIGHTS BY TOPIC</span>
-              <h2 className="text-3xl md:text-5xl font-serif font-bold text-white mb-6">Explore by Topic</h2>
-              
-              {/* Clickable Topic Tags Grid / Pills */}
-              <div className="flex flex-wrap gap-3">
-                {TOPICS.map((topic) => (
-                  <button
-                    key={topic}
-                    onClick={() => setSelectedTopic(topic)}
-                    className={`px-5 py-3 text-[11px] font-bold tracking-[0.1em] uppercase rounded-sm border transition-all duration-300 ${
-                      selectedTopic === topic
-                        ? 'bg-gold text-[#0b0f19] border-gold shadow-lg shadow-gold/10'
-                        : 'bg-white/5 text-slate-300 border-white/10 hover:border-gold/50 hover:bg-white/10'
-                    }`}
-                  >
-                    {topic}
-                  </button>
-                ))}
-              </div>
-            </div>
-          </Reveal>
-        </div>
-      </section>
-
-      {/* SECTION 09 – NEWSLETTER */}
-      <section className="py-24 bg-[#0a1124] border-t border-white/10">
-        <div className="container mx-auto px-6 lg:px-12 max-w-4xl text-center">
-          <Reveal>
-            <span className="text-gold text-[10px] font-semibold tracking-[0.2em] uppercase mb-3 block">NEWSLETTER</span>
-            <h2 className="text-3xl md:text-5xl font-serif font-bold text-white mb-4">Stay Connected</h2>
-            <p className="text-slate-400 font-light text-[15px] max-w-xl mx-auto mb-10 leading-relaxed">
-              Receive the latest engineering insights, company news and project updates directly from SEED.
-            </p>
-
-            {subscribed ? (
-              <div className="p-4 bg-gold/10 border border-gold/40 text-gold text-sm font-semibold rounded-sm inline-block">
-                ✓ Thank you for subscribing! You will receive our latest updates directly in your inbox.
-              </div>
-            ) : (
-              <form onSubmit={handleSubscribe} className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
-                <input
-                  type="email"
-                  required
-                  placeholder="Email Address"
-                  value={email}
-                  onChange={e => setEmail(e.target.value)}
-                  className="flex-1 bg-white/5 border border-white/15 px-5 py-4 text-slate-200 text-sm outline-none focus:border-gold rounded-sm placeholder:text-slate-500"
-                />
-                <button
-                  type="submit"
-                  className="px-8 py-4 bg-gold hover:bg-yellow-500 text-[#0b0f19] font-sans text-[11px] font-bold tracking-[0.15em] uppercase transition-colors shrink-0 rounded-sm"
-                >
-                  Subscribe
-                </button>
-              </form>
-            )}
-          </Reveal>
-        </div>
-      </section>
-
-      {/* SECTION 10 – CALL TO ACTION */}
-      <section className="py-28 relative overflow-hidden bg-[#0f172a] border-t border-white/5">
+      {/* SECTION 03 – CALL TO ACTION */}
+      <section className="py-28 relative overflow-hidden bg-[#0b0f19] border-t border-white/5">
         <div className="container mx-auto px-6 lg:px-12 text-center">
           <Reveal>
             <span className="text-gold text-[10px] font-semibold tracking-[0.2em] uppercase mb-4 block">COLLABORATION</span>
