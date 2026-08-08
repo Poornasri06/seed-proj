@@ -12,7 +12,7 @@ const COMPANY_NEWS = [
     category: 'Media Coverage',
     date: '18 Jun 2026',
     desc: 'A proud milestone for SEED Engineering last week. Our Managing Director, Sanu Mathew, has been recognised with the Honourable Achievement for Executive of the Year.',
-    image: '/projects/sanu-mathew-award-cert.webp',
+    image: '/projects/news-sanu-mathew-award.webp',
   },
   {
     slug: 'st-regis-branded-residences-honourable-achievement',
@@ -20,7 +20,7 @@ const COMPANY_NEWS = [
     category: 'Media Coverage',
     date: '17 Jun 2026',
     desc: 'At the 16th Big Project Middle East Awards last night, we are delighted to share that The St. Regis Branded Residences has received an Honourable Achievement.',
-    image: '/projects/st-regis-award-portrait.webp',
+    image: '/projects/news-st-regis-award.webp',
   },
   {
     slug: 'wasl-tower-mep-project-of-the-year',
