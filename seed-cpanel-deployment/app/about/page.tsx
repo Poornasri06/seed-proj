@@ -24,7 +24,7 @@ const GLOBAL_OFFICES = [
   { city: 'Mumbai', country: 'India', role: 'West India Design Center', flag: '🇮🇳' },
   { city: 'Kochi', country: 'India', role: 'South India Engineering Center', flag: '🇮🇳' },
   { city: 'Bengaluru', country: 'India', role: 'Digital Delivery & BIM Center', flag: '🇮🇳' },
-  { city: 'Delhi', country: 'India', role: 'North India Regional Office', flag: '🇮🇳' },
+  { city: 'Gurugram', country: 'India', role: 'North India Regional Office', flag: '🇮🇳' },
   { city: 'Pune', country: 'India', role: 'Engineering Design Center', flag: '🇮🇳' },
 ];
 
