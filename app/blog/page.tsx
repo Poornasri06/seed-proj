@@ -230,50 +230,6 @@ export default function InsightsPage() {
         </div>
       </section>
 
-      {/* SECTION 03 – LATEST ARTICLES */}
-      <section className="py-24 bg-[#0b0f19]">
-        <div className="container mx-auto px-6 lg:px-12">
-          <Reveal>
-            <div className="mb-16">
-              <span className="text-gold text-[10px] font-semibold tracking-[0.2em] uppercase mb-3 block">KNOWLEDGE BASE</span>
-              <h2 className="text-3xl md:text-5xl font-serif font-bold text-white">Latest Articles</h2>
-            </div>
-          </Reveal>
-
-          {/* 3-Column Articles Grid */}
-          <Stagger className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {filteredArticles.map((art) => (
-              <StaggerItem key={art.id}>
-                <div className="bg-[#0f172a] border border-white/8 rounded-sm overflow-hidden flex flex-col h-full group hover:border-gold/40 transition-colors">
-                  <div className="relative aspect-[4/3] w-full overflow-hidden bg-[#0a1020]">
-                    <Image
-                      src={art.image}
-                      alt={art.title}
-                      fill
-                      className="object-cover transition-transform duration-700 group-hover:scale-105"
-                    />
-                  </div>
-                  <div className="p-6 flex-grow flex flex-col justify-between">
-                    <div>
-                      <div className="flex items-center justify-between mb-3">
-                        <span className="text-gold text-[10px] font-bold tracking-[0.15em] uppercase">{art.category}</span>
-                        <span className="text-slate-500 text-[11px] font-light">{art.date}</span>
-                      </div>
-                      <h3 className="font-serif text-xl font-bold text-white mb-3 group-hover:text-gold transition-colors">{art.title}</h3>
-                      <p className="text-slate-400 text-[13px] font-light leading-relaxed mb-6">{art.excerpt}</p>
-                    </div>
-                    <div className="pt-4 border-t border-white/5">
-                      <Link href={`/blog/article-${art.id}`} className="text-gold text-[11px] font-bold tracking-[0.1em] uppercase group-hover:underline flex items-center gap-1">
-                        Read More →
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-              </StaggerItem>
-            ))}
-          </Stagger>
-        </div>
-      </section>
 
       {/* SECTION 04 – NEWS */}
       <section className="py-24 bg-[#0f172a] border-t border-white/5">
