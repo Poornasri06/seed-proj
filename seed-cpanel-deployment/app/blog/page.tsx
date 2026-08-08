@@ -240,7 +240,7 @@ export default function InsightsPage() {
                 <div className="bg-[#0b0f19] border border-white/8 p-6 rounded-sm h-full flex flex-col justify-between group hover:border-gold/40 transition-colors">
                   <div>
                     <div className="relative aspect-[16/9] w-full mb-6 overflow-hidden rounded-sm bg-[#060e25]">
-                      <Image src={news.image} alt={news.headline} fill className="object-cover transition-transform duration-700 group-hover:scale-105" />
+                      <Image src={news.image} alt={news.headline} fill className="object-cover object-top transition-transform duration-700 group-hover:scale-105" />
                     </div>
                     <div className="flex items-center justify-between mb-3">
                       <span className="text-gold text-[10px] font-bold tracking-[0.15em] uppercase">{news.category}</span>
