@@ -467,7 +467,7 @@ export default function ContactPage() {
             <div className="flex items-center justify-between bg-[#0f172a] border border-white/8 p-6 rounded-sm">
               <div>
                 <h4 className="text-white font-serif font-bold text-lg mb-1">Dubai Headquarters</h4>
-                <p className="text-slate-400 text-[13px] font-light">Office 1104, Bay Square 13, Business Bay, Dubai, UAE</p>
+                <p className="text-slate-400 text-[13px] font-light">#303, Old Commercial Bank of Dubai Building, Opp. Hamarain Centre, Abu Baker Al Siddique Road, Deira, P.O. Box 119146, Dubai, UAE</p>
               </div>
               <a
                 href="https://maps.google.com/?q=Bay+Square+13+Business+Bay+Dubai"
