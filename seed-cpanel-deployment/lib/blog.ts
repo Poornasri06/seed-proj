@@ -37,10 +37,10 @@ Wasl is one of the largest developers in the region and has positively added val
     _id: 'b2',
     slug: 'wasl-tower-mep-project-of-the-year',
     title: 'Wasl Tower | MEP Project of the Year',
-    category: 'Media Coverage',
+    category: 'Awards & Recognition',
     excerpt: 'At the 16th Big Project Middle East Awards last night, SEED Engineering Consultants was honoured with the MEP Project of the Year award for Wasl Tower.',
-    publishedAt: '2026-06-16T09:00:00Z',
-    image: '/projects/wasl-tower-trophy-photo.webp',
+    publishedAt: '2026-02-11T09:00:00Z',
+    image: '/projects/news-wasl-tower-award.webp',
     content: `At the 16th Big Project Middle East Awards last night, SEED Engineering Consultants was honoured with the MEP Project of the Year award for Wasl Tower, recognising one of the region’s most technically ambitious and award-winning developments.
 
 At 302m, Wasl Tower is one of Dubai’s most complex mixed-use developments, integrating offices, residences and a 5-star Mandarin Oriental hotel within a highly intricate architectural form.
@@ -57,10 +57,10 @@ This award reinforces our commitment to delivering innovative, high-performance 
     _id: 'b3',
     slug: 'st-regis-branded-residences-honourable-achievement',
     title: 'St. Regis Branded Residences | Honourable Achievement',
-    category: 'Media Coverage',
+    category: 'Awards & Recognition',
     excerpt: 'At the 16th Big Project Middle East Awards last night, we are delighted to share that The St. Regis Branded Residences has received an Honourable Achievement.',
-    publishedAt: '2026-06-17T09:00:00Z',
-    image: '/projects/st-regis-award-portrait.webp',
+    publishedAt: '2026-02-11T09:00:00Z',
+    image: '/projects/news-st-regis-award.webp',
     content: `At the 16th Big Project Middle East Awards last night, we are delighted to share that The St. Regis Branded Residences has received an Honourable Achievement – Project of the Year (Residential).
 
 This recognition reflects the project’s excellence in delivering premium residential living through a balanced integration of architectural design and high-performance MEP systems.
@@ -73,10 +73,10 @@ This award highlights our commitment to delivering technically robust, efficient
     _id: 'b4',
     slug: 'sanu-mathew-executive-of-the-year',
     title: 'Sanu Mathew | Honourable Achievement for Executive of the Year',
-    category: 'Media Coverage',
+    category: 'Awards & Recognition',
     excerpt: 'A proud milestone for SEED Engineering last week. Our Managing Director, Sanu Mathew, has been recognised with the Honourable Achievement for Executive of the Year.',
-    publishedAt: '2026-06-18T09:00:00Z',
-    image: '/projects/sanu-mathew-award-cert.webp',
+    publishedAt: '2025-12-09T09:00:00Z',
+    image: '/projects/news-sanu-mathew-award.webp',
     content: `A proud milestone for SEED Engineering last week. Our Managing Director, Sanu Mathew, has been recognised with the Honourable Achievement for Executive of the Year - Male at the Middle East Consultant Awards 2025.
 
 For over two decades, Sanu has led SEED with focus and intent - guiding our growth across the Gulf, India and East Africa, and building a consultancy grounded in technical rigour, sustainable thinking and long-term value.

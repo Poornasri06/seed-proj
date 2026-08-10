@@ -31,6 +31,13 @@ export const featuredProjects = [
     location: 'Dubai, UAE',
     projectScale: 'BUA: 165,000 sqm · 2B+G+64 · MEP Design & Supervision',
     image: '/projects/mandarin-wasl-tower.webp',
+    images: [
+      '/projects/mandarin-wasl-tower.webp',
+      '/projects/mandarin-wasl-1.jpg',
+      '/projects/mandarin-wasl-2.jpg',
+      '/projects/mandarin-wasl-3.jpg',
+      '/projects/mandarin-wasl-4.png'
+    ],
     challenge:
       'A bold 302-metre landmark on Sheikh Zayed Road with 64 storeys integrating hospitality, residential, retail and commercial — featuring one of the world\'s tallest ceramic facades.',
     scope: 'MEP Design & Supervision',
@@ -65,6 +72,7 @@ export const portfolio: {
   title: string; slug: string; division: string; clientSector: string;
   location: string; projectScale: string; image: string; description: string;
   client?: string; architect?: string; services?: string; area?: string; sector?: string;
+  images?: string[];
 }[] = [
     {
         title: "Mandarin Oriental Wasl Tower",
@@ -79,6 +87,13 @@ export const portfolio: {
         services: "MEP Design & Supervision",
         area: "150,000.00 sqm",
         image: "/projects/mandarin-wasl-tower.webp",
+        images: [
+          "/projects/mandarin-wasl-tower.webp",
+          "/projects/mandarin-wasl-1.jpg",
+          "/projects/mandarin-wasl-2.jpg",
+          "/projects/mandarin-wasl-3.jpg",
+          "/projects/mandarin-wasl-4.png"
+        ],
         description: "Mixed used 302m, tall building consisting Of 2B+G+64 floors of offices, Mandarin Hotel and high-end residential apartments on Sh. Zayed Road, Dubai."
     },
     {
@@ -167,7 +182,7 @@ export const portfolio: {
         architect: "Pininfarina",
         services: "MEP Design",
         area: "50,947 sqm",
-        image: "/projects/Iconic Tower.webp",
+        image: "/projects/iconic-tower-full.jpg",
         description: ""
     },
     {
@@ -197,7 +212,7 @@ export const portfolio: {
         architect: "BSBG",
         services: "MEP Design & Supervision",
         area: "98,296 sqm",
-        image: "/projects/Playa del sol.webp",
+        image: "/projects/playa-del-sol-new.png",
         description: "Playa Del Sol is a contemporary residential development located on the prestigious Al Marjan Island in Ras Al Khaimah, one of the UAE's most prominent waterfront destinations. The project is designed to deliver a premium residential experience, combining modern living with a resort-style coastal environment.\nThe development spans a plot area of approximately 167,447 sqm, with a total built-up area of around 533,000 sqm. The project comprises mid-rise residential buildings configured with ground floor, podium levels accommodating parking and amenities, and multiple residential floors, creating a well-integrated and efficient urban development.\nThe development accommodates approximately 420 residential units, offering a diverse mix of apartment types ranging from studios to four-bedroom penthouses. Designed to cater to the mid to upper-income market, the project emphasizes efficient layouts, high-quality finishes and optimised space utilisation, delivering a comfortable and contemporary living environment.\nThe project incorporates a comprehensive range of MEP systems, including HVAC, electrical, plumbing, fire protection, fire alarm, chilled water, ventilation and LPG systems. All systems are designed in accordance with international standards and local authority regulations, ensuring high levels of safety, efficiency and operational performance."
     },
     {

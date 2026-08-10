@@ -26,26 +26,6 @@ const CONTACT_CARDS = [
       { label: 'Response Time', value: 'Within 24 Business Hours' },
     ],
   },
-  {
-    title: 'Direct Engineering Contact',
-    subtitle: 'Technical & Supervision Inquiries',
-    icon: '📞',
-    details: [
-      { label: 'Telephone', value: '+971 42 564 882' },
-      { label: 'Technical Desk', value: 'contact@seedengineering.com' },
-      { label: 'Supervision Site Support', value: 'contact@seedengineering.com' },
-    ],
-  },
-  {
-    title: 'Commercial & RFP Tenders',
-    subtitle: 'Proposals & Press Engagement',
-    icon: '💼',
-    details: [
-      { label: 'RFP & Tender Submissions', value: 'contact@seedengineering.com' },
-      { label: 'Media & Communications', value: 'contact@seedengineering.com' },
-      { label: 'Vendor & Partner Network', value: 'contact@seedengineering.com' },
-    ],
-  },
 ];
 
 const OFFICES = [
@@ -179,7 +159,7 @@ export default function ContactPage() {
             </div>
           </Reveal>
 
-          <Stagger className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <Stagger className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             {CONTACT_CARDS.map((card, idx) => (
               <StaggerItem key={idx}>
                 <div className="bg-[#0b0f19] border border-white/8 p-8 rounded-sm h-full flex flex-col justify-between hover:border-gold/40 transition-colors group">
@@ -216,26 +196,9 @@ export default function ContactPage() {
               <Reveal>
                 <span className="text-gold text-[10px] font-semibold tracking-[0.2em] uppercase mb-3 block">INQUIRIES</span>
                 <h2 className="text-4xl md:text-5xl font-serif font-bold text-white mb-6">Send Us a Message</h2>
-                <p className="text-slate-400 font-light text-[15px] leading-relaxed mb-8">
+                <p className="text-slate-400 font-light text-[15px] leading-relaxed">
                   Complete the form below and one of our senior engineering team members will get back to you as soon as possible.
                 </p>
-
-                <div className="space-y-6 bg-[#0f172a] border border-white/8 p-8 rounded-sm">
-                  <div className="flex items-start gap-4">
-                    <span className="text-gold text-lg">⚡</span>
-                    <div>
-                      <h4 className="text-white font-serif font-bold text-base mb-1">Fast Technical Response</h4>
-                      <p className="text-slate-400 text-[13px] font-light">Every project brief is reviewed directly by an engineering lead.</p>
-                    </div>
-                  </div>
-                  <div className="flex items-start gap-4">
-                    <span className="text-gold text-lg">🔒</span>
-                    <div>
-                      <h4 className="text-white font-serif font-bold text-base mb-1">Confidential & Direct</h4>
-                      <p className="text-slate-400 text-[13px] font-light">Your commercial plans, drawings, and RFPs are handled with strict privacy.</p>
-                    </div>
-                  </div>
-                </div>
               </Reveal>
             </div>
 

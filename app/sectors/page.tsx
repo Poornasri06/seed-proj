@@ -11,7 +11,6 @@ const SECTORS_DATA = [
     title: 'Hospitality',
     image: '/sectors/jw marriot sevtor image.jpeg',
     desc: 'Engineering luxury hospitality environments where guest comfort, operational efficiency and sustainability work seamlessly together. From boutique hotels to destination resorts, every system is designed to enhance the guest experience while supporting long-term operational performance.',
-    subSectors: ['Hotels', 'Resorts', 'Branded Residences', 'Serviced Apartments', 'Lifestyle Destinations'],
     cta: 'Explore Hospitality Projects →',
   },
   {
@@ -20,7 +19,6 @@ const SECTORS_DATA = [
     title: 'Residential',
     image: '/sectors/stregis sector image.avif',
     desc: 'Designing high-performance residential environments that prioritise comfort, efficiency and reliability. Our integrated engineering solutions support luxury towers, villas and mixed-use communities through every stage of development.',
-    subSectors: ['High-rise Residential', 'Villas', 'Branded Residences', 'Mixed-use Communities', 'Staff Accommodation'],
     cta: 'Explore Residential Projects →',
   },
   {
@@ -29,7 +27,6 @@ const SECTORS_DATA = [
     title: 'Commercial',
     image: '/sectors/Al Ajlan KSR HQ Tower.png',
     desc: 'Creating intelligent workplaces that support productivity, occupant wellbeing and future adaptability. Our engineering solutions are designed for commercial towers, headquarters and mixed-use business environments.',
-    subSectors: ['Office Towers', 'Corporate Headquarters', 'Business Parks', 'Commercial Developments', 'Mixed-use Offices'],
     cta: 'Explore Commercial Projects →',
   },
   {
@@ -38,7 +35,6 @@ const SECTORS_DATA = [
     title: 'Education',
     image: '/sectors/Sobha Hartland.jpeg',
     desc: 'Engineering educational environments that are safe, flexible and built for long-term learning. We support schools, universities and research facilities with efficient and sustainable building systems.',
-    subSectors: ['Schools', 'Universities', 'Research Facilities', 'Student Accommodation', 'Training Centres'],
     cta: 'Explore Education Projects →',
   },
   {
@@ -47,7 +43,6 @@ const SECTORS_DATA = [
     title: 'Healthcare',
     image: '/sectors/NMC Hospital.jpg',
     desc: 'Delivering resilient engineering for hospitals and healthcare facilities where reliability, infection control and uninterrupted operations are critical. Every solution is developed to support patient wellbeing and clinical excellence.',
-    subSectors: ['Hospitals', 'Clinics', 'Medical Centres', 'Laboratories', 'Wellness Facilities'],
     cta: 'Explore Healthcare Projects →',
   },
   {
@@ -56,7 +51,6 @@ const SECTORS_DATA = [
     title: 'Retail',
     image: '/sectors/galleria-mall.jpg',
     desc: 'Engineering retail destinations that enhance customer experience while maintaining operational efficiency. From shopping malls to mixed-use retail environments, every solution supports comfort, sustainability and flexibility.',
-    subSectors: ['Shopping Malls', 'Retail Centres', 'High Street Retail', 'Entertainment Retail', 'Food & Beverage'],
     cta: 'Explore Retail Projects →',
   },
   {
@@ -65,7 +59,6 @@ const SECTORS_DATA = [
     title: 'Sports & Stadiums',
     image: '/sectors/dammam stadium.webp',
     desc: 'Providing specialist engineering for stadiums, arenas and sports complexes where crowd comfort, life safety and operational resilience are essential to world-class sporting experiences.',
-    subSectors: ['Stadiums', 'Indoor Arenas', 'Sports Complexes', 'Aquatic Centres', 'Training Facilities'],
     cta: 'Explore Sports Projects →',
   },
   {
@@ -74,7 +67,6 @@ const SECTORS_DATA = [
     title: 'Entertainment, Cultural, Public Buildings & Theme Parks',
     image: '/sectors/sector_cultural_1781248059245.webp',
     desc: 'Engineering destinations that inspire people and enrich communities. We support museums, theatres, civic buildings, convention centres and theme parks with integrated engineering that balances visitor experience, operational performance and architectural ambition.',
-    subSectors: ['Theme Parks', 'Museums', 'Convention Centres', 'Cultural Centres', 'Civic Buildings', 'Performing Arts Centres'],
     cta: 'Explore Cultural Projects →',
   },
   {
@@ -83,7 +75,6 @@ const SECTORS_DATA = [
     title: 'Aviation',
     image: '/sectors/dxb airport.png',
     desc: 'Engineering aviation facilities that demand the highest standards of safety, resilience and operational continuity. Our multidisciplinary expertise supports terminals, airport infrastructure and specialised aviation buildings.',
-    subSectors: ['Airport Terminals', 'VIP Terminals', 'Air Cargo', 'Airport Support Buildings', 'Aviation Infrastructure'],
     cta: 'Explore Aviation Projects →',
   },
   {
@@ -92,7 +83,6 @@ const SECTORS_DATA = [
     title: 'Villas & Private Estates',
     image: '/sectors/JEBEL HAFEET MOUNTAIN VILLA, AL AIN.webp',
     desc: 'Creating discreet, efficient and luxurious engineering solutions for high-end private residences. Every system is tailored to deliver comfort, sustainability and long-term reliability.',
-    subSectors: ['Luxury Villas', 'Beachfront Villas', 'Private Estates', 'Signature Homes'],
     cta: 'Explore Villa Projects →',
   },
   {
@@ -101,7 +91,6 @@ const SECTORS_DATA = [
     title: 'Infrastructure & Sustainable Communities',
     image: '/sectors/infrastructure-sustainable-communities.jpg',
     desc: 'Supporting cities and large-scale developments with integrated engineering that improves resilience, sustainability and long-term urban performance.',
-    subSectors: ['District Infrastructure', 'Utilities', 'Smart Cities', 'Public Realm', 'Sustainable Communities'],
     cta: 'Explore Infrastructure Projects →',
   },
 ];
@@ -171,23 +160,6 @@ export default function SectorsPage() {
                     <p className="text-slate-400 text-[13px] font-light leading-relaxed mb-6">
                       {sector.desc}
                     </p>
-
-                    {/* Clickable Sub-Sectors Links */}
-                    <div className="mb-8 border-t border-white/5 pt-4">
-                      <span className="text-gold text-[10px] font-bold tracking-[0.2em] uppercase block mb-3">SUB-SECTORS</span>
-                      <div className="flex flex-wrap gap-2">
-                        {sector.subSectors.map((sub, i) => (
-                          <Link
-                            key={i}
-                            href={`/projects?sector=${encodeURIComponent(sector.title)}&subSector=${encodeURIComponent(sub)}`}
-                            className="inline-flex items-center gap-1.5 bg-white/5 hover:bg-gold/15 text-slate-300 hover:text-gold border border-white/10 hover:border-gold/40 px-3 py-1.5 rounded-sm text-[11px] font-medium transition-all duration-300"
-                          >
-                            <span>{sub}</span>
-                            <span className="text-gold font-bold text-[10px]">→</span>
-                          </Link>
-                        ))}
-                      </div>
-                    </div>
                   </div>
 
                   {/* Primary CTA Button */}
