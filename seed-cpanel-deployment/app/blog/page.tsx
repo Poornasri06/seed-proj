@@ -16,6 +16,14 @@ interface ArticleItem {
 
 const MEDIA_COVERAGES: ArticleItem[] = [
   {
+    slug: 'east-africa-improves-ease-of-doing-business-2022',
+    headline: '2022 Review: East Africa improves ease of doing business',
+    category: 'Media Coverage',
+    date: '15 Dec 2022',
+    desc: 'Investment opportunities in East Africa are paving financial growth.',
+    image: '/projects/east-africa-business-review-2022.png',
+  },
+  {
     slug: 'seed-engineering-latest-news',
     headline: 'SEED Engineering Latest Media Coverage',
     category: 'Media Coverage',
@@ -103,7 +111,8 @@ export default function InsightsPage() {
             </div>
           </Reveal>
 
-          <Stagger className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl">
+          <Stagger className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
             {MEDIA_COVERAGES.map((news, idx) => (
               <StaggerItem key={idx}>
                 <div 

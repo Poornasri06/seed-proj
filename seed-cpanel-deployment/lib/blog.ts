@@ -84,5 +84,20 @@ For over two decades, Sanu has led SEED with focus and intent - guiding our grow
 This recognition is an encouragement for us to keep pushing forward: continuing to raise standards, investing in our people, and delivering engineering that is purposeful, responsible and built to last.
 
 We extend our sincere thanks to our clients, partners and the entire SEED team for the trust and support that make achievements like this possible.`
+  },
+  {
+    _id: 'b5',
+    slug: 'east-africa-improves-ease-of-doing-business-2022',
+    title: '2022 Review: East Africa improves ease of doing business',
+    category: 'Media Coverage',
+    excerpt: 'Investment opportunities in East Africa are paving financial growth.',
+    publishedAt: '2022-12-15T09:00:00Z',
+    image: '/projects/east-africa-business-review-2022.png',
+    content: `Investment opportunities in East Africa are paving financial growth. As regional markets mature and infrastructure development accelerates, East Africa continues to strengthen its economic framework and ease of doing business.
+
+SEED Engineering Consultants has been actively engaged across key East African markets including Tanzania, Zanzibar, Uganda, and Ethiopia, delivering sustainable MEP design and high-performance engineering solutions for commercial, hospitality, and residential developments.
+
+With expanding investment landscapes and commitment to sustainable infrastructure, East Africa presents immense potential for renewable energy integration, energy-efficient building systems, and long-term economic growth.`
   }
 ];
+
