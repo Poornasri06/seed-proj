@@ -90,14 +90,20 @@ We extend our sincere thanks to our clients, partners and the entire SEED team f
     slug: 'east-africa-improves-ease-of-doing-business-2022',
     title: '2022 Review: East Africa improves ease of doing business',
     category: 'Media Coverage',
-    excerpt: 'Investment opportunities in East Africa are paving financial growth.',
-    publishedAt: '2022-12-15T09:00:00Z',
+    excerpt: 'The investment and future business opportunities present in East Africa are pushing them to be the next big hub of financial growth and development.',
+    publishedAt: '2022-07-15T09:00:00Z',
     image: '/projects/east-africa-business-review-2022.png',
-    content: `Investment opportunities in East Africa are paving financial growth. As regional markets mature and infrastructure development accelerates, East Africa continues to strengthen its economic framework and ease of doing business.
+    content: `The investment and future business opportunities present in East Africa are pushing them to be the next big hub of financial growth and development. Their potential in trading with international and domestic firms will create a booming economy with stable growth and success.
 
-SEED Engineering Consultants has been actively engaged across key East African markets including Tanzania, Zanzibar, Uganda, and Ethiopia, delivering sustainable MEP design and high-performance engineering solutions for commercial, hospitality, and residential developments.
+The Doing Business 2020 report showed that East Africa’s economy and business environment had steadily improved and grown. In comparison to the 2019 report, Kenya’s rank rose by five ranks with a Doing Business score of 73.2. Uganda went up by 11 ranks with a score of 60, which is the largest large jump compared to other East African countries. Tanzania rose by three ranks with a score of 54.5, Burundi went up by two ranks and South Sudan maintained the same position.
 
-With expanding investment landscapes and commitment to sustainable infrastructure, East Africa presents immense potential for renewable energy integration, energy-efficient building systems, and long-term economic growth.`
+For the Doing Business 2020 study, twelve parameters were used to measure the ease of doing Business and Doing Business ranks. Starting a Business, getting construction permits, obtaining electricity connections, transferring or registering property, access to credit, protection of minority investors, payment of taxes, international trading, enforcing contracts and resolving insolvency were used to measure the economic activity of 190 global economies. The objective of the data collected by the study was to create business environments and economies that encourage fair and transparent regulation of business that is accessible, innovative and sustainable.
+
+Due to the Doing Business reforms that were implemented from 2018 to 2019, Kenya improved its performance across many business regulations. They made it easier and faster to obtain construction permits, electricity, credit, pay taxes and resolve insolvency. Kenya strengthened its protection for minority investors by requiring shareholders to be actively involved in important elections and dismissals. Rwanda made it easier for starting businesses and obtaining construction permits and electricity. Regulations for weekly rest, working hours, severance pay and reemployment were also changed. The country has the lowest cost along with Slovenia for starting a business.
+
+East Africa is investing and developing key areas of development and infrastructure. The introduction of technology into business practices has made it easier for domestic and international firms to access payment systems, tax filings and many more important services, especially during the Covid pandemic. They are implementing policies and reforms that benefit and improve the lives of local people.
+
+East Africa is emerging as a strong prospect for economic expansion and stable development. Their efforts will soon allow them to compete with global economies. The future for East Africa has many optimistic outcomes with its financial plans and strategies.`
   }
 ];
 

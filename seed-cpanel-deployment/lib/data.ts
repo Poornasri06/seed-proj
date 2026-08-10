@@ -31,13 +31,6 @@ export const featuredProjects = [
     location: 'Dubai, UAE',
     projectScale: 'BUA: 165,000 sqm · 2B+G+64 · MEP Design & Supervision',
     image: '/projects/mandarin-wasl-tower.webp',
-    images: [
-      '/projects/mandarin-wasl-tower.webp',
-      '/projects/mandarin-wasl-1.jpg',
-      '/projects/mandarin-wasl-2.jpg',
-      '/projects/mandarin-wasl-3.jpg',
-      '/projects/mandarin-wasl-4.png'
-    ],
     challenge:
       'A bold 302-metre landmark on Sheikh Zayed Road with 64 storeys integrating hospitality, residential, retail and commercial — featuring one of the world\'s tallest ceramic facades.',
     scope: 'MEP Design & Supervision',
@@ -87,13 +80,6 @@ export const portfolio: {
         services: "MEP Design & Supervision",
         area: "150,000.00 sqm",
         image: "/projects/mandarin-wasl-tower.webp",
-        images: [
-          "/projects/mandarin-wasl-tower.webp",
-          "/projects/mandarin-wasl-1.jpg",
-          "/projects/mandarin-wasl-2.jpg",
-          "/projects/mandarin-wasl-3.jpg",
-          "/projects/mandarin-wasl-4.png"
-        ],
         description: "Mixed used 302m, tall building consisting Of 2B+G+64 floors of offices, Mandarin Hotel and high-end residential apartments on Sh. Zayed Road, Dubai."
     },
     {

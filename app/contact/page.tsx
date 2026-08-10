@@ -18,10 +18,10 @@ const CONTACT_CARDS = [
   },
   {
     title: 'Business Hours',
-    subtitle: 'Headquarters & Regional Offices',
+    subtitle: 'Headquarters',
     icon: '⏰',
     details: [
-      { label: 'Monday – Friday', value: '8:00 AM – 6:00 PM (GST)' },
+      { label: 'Monday – Friday', value: '8:00 AM – 6:00 PM' },
       { label: 'Saturday & Sunday', value: 'Closed' },
       { label: 'Response Time', value: 'Within 24 Business Hours' },
     ],

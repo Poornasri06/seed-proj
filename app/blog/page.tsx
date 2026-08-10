@@ -19,8 +19,8 @@ const MEDIA_COVERAGES: ArticleItem[] = [
     slug: 'east-africa-improves-ease-of-doing-business-2022',
     headline: '2022 Review: East Africa improves ease of doing business',
     category: 'Media Coverage',
-    date: '15 Dec 2022',
-    desc: 'Investment opportunities in East Africa are paving financial growth.',
+    date: '15 Jul 2022',
+    desc: 'The investment and future business opportunities present in East Africa are pushing them to be the next big hub of financial growth and development.',
     image: '/projects/east-africa-business-review-2022.png',
   },
   {
